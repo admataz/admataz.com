@@ -1,0 +1,19 @@
+{
+    "routePath": "case-studies",
+    "docs": {
+        "page": "./src/content/pages/case-studies.md"
+    },
+    "data": {
+        "common": "./src/content/data/global-content.json"
+    },
+    "templates": {
+        "page": "./src/templates/page_case_studies_index.handlebars"
+    },
+    "indexPages": {
+        "caseStudiesIndex": {
+            "inputPath": "./src/content/case_studies",
+            "template": "./src/templates/pageIndexes/pageIndexList.handlebars",
+            "outputPath": "/case-studies"
+        }
+    }
+}
