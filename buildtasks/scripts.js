@@ -5,7 +5,7 @@ var reactify = require('reactify');
 var uglify = require('uglify-js');
 
 
-
+process.env.NODE_ENV = "production";
 
 function init(callback) {
     async.series([
@@ -13,7 +13,7 @@ function init(callback) {
                 var b = browserify({
                     transform: [reactify]
                 });
-                b.add('./src/components/admataz_logo');
+                // b.add('./src/components/admataz_logo');
                 b.add('./src/components/admataz_blocks');
                 b.add('./src/components/client_list');
 
@@ -22,7 +22,7 @@ function init(callback) {
                         return cb(err);
                     }
                     fs.outputFile('./dist/js/components.js', uglify.minify(buff.toString(), { fromString: true }).code, cb);
-                    //   fs.outputFile('./dist/js/components.js', buff, cb);
+                    // fs.outputFile('./dist/js/components.js', buff, cb);
                 });
             }
         ],
