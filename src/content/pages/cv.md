@@ -4,35 +4,39 @@ Adam Davis
 **Tel:** +44 7757 234443  **Email:** [adam@admataz.com](mailto:adam@admataz.com) **Web:** [admataz.com](http://admataz.com)
 
 ## Web Developer, Technical Lead, Technologist
-I am a full stack web developer with over 15 years professional experience. I am equally comfortable developing RESTful web services and content management tools as I am happy programming client-side web applications and interfaces for desktop and mobile. I am familiar with web standards across the tiers and have a continually growing knowledge of a range of open source languages, tools, libraries, frameworks and applications that help deliver the end product to the user. Over the years I have extended myself to interaction design, information architecture, education, game design, business strategy and project management, but at the core has always been the mechanics of web technologies: code, data and people. I love the web: to a technologist like me it is a giant puzzle and playground. And as a platform for people, ideas and culture, it is my passion.
+I am an experienced senior web developer bringing deep technical knowledge and leadership to the teams I work with.  My understanding of the languages, tools, libraries, frameworks and applications of the web - and my insights into process, architecture and best practices help deliver the end product to the user.
 
 ## My skills and experience
 ### Web programming languages and technologies
-- PHP and MySQL for server-side application development
-- JavaScript on the client side for data visualisation, browser-based web apps and interface enhancements
 - Node.js for building web services and server-side applications
-- HTML and CSS for document markup and presentation
-- Flash and ActionScript for RIAs and games
+- PHP and MySQL for server-side application development
+- JavaScript for data visualisation, browser-based web apps and enhanced interfaces
+- HTML and SASS/CSS for document markup and presentation
+- Small bits of Ruby for process scripts
+- ActionScript and Flash (back in the day)
 
 ### Libraries, frameworks and APIs
-- MVC with CodeIgniter, CakePHP, Kohana
-- Drupal build, and custom module and theme development
-- WordPress custom theme and plugin development
-- Node.js, Restify, and MongoDB for serving a large database of documents
-- A range of JavaScript tools and libraries including jQuery, Backbone.js, Handelbars.js, Dojo Toolkit, YUI.
-- APIs: Urban Airship, Twitter, Facebook, Google+, Google Maps, Last.FM, Delicious, Flickr, YouTube, Vimeo
-- Fun with Arduino and nodebots. 
+- Node.js and the world of npm for developing networked web applications and developer tooling.
+- Currently: React, Redux, VueJS… the ever expanding arsenal of client-side JavaScript tools, frameworks and libraries. Also: jQuery, Dojo, Backbone…
+- d3.js, Mapbox, Tableau data visualisation tools 
+- PHP, Drupal and Wordpress - custom module and theme development
+- BDD and Unit test driven development using Mocha, Chai, Sinon, Tape, Cucumber, Webdriver.io.
+- APIs: Twitter, Facebook, Google+, Google Maps, YouTube, Urban Airship, Vimeo… 
+- Fun and experiments with JohnnyFive for Arduino, and related JavaScript-enabled hardware (Raspberry Pi, Espruino and Tessel)
 
-### Technical infrastructure
+### Infrastructure and DevOps
 - Linux web server config and management (Ubuntu, CentOS, RHEL)
-- Various cloud services - AWS, Rackspace, Nodejitsu, MongoHQ
-- Grunt and Gulp for builds
-- Puppet and Vagrant for development environments
+- Sever provisioning with Ansible and shell scripts
+- Deployment management using Jenkins, git hooks, beanstalkapp.com and deploybot.com
+- Set up and integration with cloud services - AWS, Rackspace, Linode, DigitalOcean
+- npm scripts, Webpack, Browserify, Grunt and Gulp for build tools
+- Docker Containers and Vagrant for development environments
 - Version control and code repositories with Subversion and Git
-- Issue tracking with Trac, Redmine and Sifter
+- Issue tracking and Project Management with GitHub, Sifter,  Pivotal Tracker and Atlassian (Jira, Confluence, Bitbucket)
 
-### People, principles and processes
-- Enjoyed working with with Agile & SCRUM led teams
+### Architecture, people, principles and processes
+- Defining technical approaches and technical architecture for projects
+- Working with with Agile & SCRUM led teams
 - Client consultation and liaison
 - Project management, budgets, planning and scheduling
 - Technical delivery and studio resource management 
@@ -42,36 +46,51 @@ I am a full stack web developer with over 15 years professional experience. I am
 - IA deliverables: Site Maps, Wireframes and Concept Models 
 - Research and user testing   
 
-## Community
-- recently started helping the London Node User Group (LNUG) monthly meetups
-- I join the hackers at Nodebots London whenever possible for their monthly hack days
-- recently joined filmmakers at London Popathon hack day and a few interesting potential trans media projects are in the pipeline
+## Community and Open Source
+- I am an organiser of London Node User Group (LNUG) monthly meetups
+- I join the hackers at Nodebots London whenever possible for their monthly hack days to build and make things
+- interesting potential projects are always being talked about and in the pipeline… 
 
 _Always learning more._
 
-## Example links
-
-- **The Elders** - [theelders.org](http://theelders.org) Made with Drupal and a load of custom module and theme development, plus front-end styling and JavaScript. 
-- **Kofi Annan Foundation** - [kofiannanfoundation.org](http://kofiannanfoundation.org) Drupal site with custom theme and modules. 
-- **Topshop Kate Moss** - [topshop.com/katemoss](http://topshop.com/katemoss) "Which Kate are You" interactive quiz web app. 
-- **Africa Check** - [africacheck.org](http://africacheck.org) WordPress powered site for journalists in Africa
-- **NOW: Pensions** - [nowpensions.com](http://nowpensions.com) custom features and plugins for this WordPress based site
+## Work Examples
+- **Open Source code** - I have a number of public repos on Github at [admataz](https://github.com/admataz) and [pictographic](https://github.com/pictographic/)
+- **Pictographic - data visualisation** - [Global Cities](http://pictographic.io/viz/cities-of-the-world/) and [Trees of Camden](http://pictographic.io/viz/trees-of-camden/) 
+- **Abbas and the Revolution** - [abbas.site](http://abbas.site) - gallery and narrative for an aspect this Magnum Photographer's work
+- **Africa Check interactive Quiz** - [QUIZ: How well do you know... our 2016 reports about South Africa?](https://africacheck.org/how-to-fact-check/quiz/well-know-2016-reports-south-africa/#!/admin) made with Reduc and VueJS
+- **Girls not Brides** - [Interactive Theory of Change](http://www.girlsnotbrides.org/child-marriage-theory-of-change/interactive/)
+- **The Elders** - [theelders.org](http://theelders.org) Made with Drupal and a load of custom module and theme development, plus front-end styling and JavaScript.
+- **Topshop interactive quizzes** - ["Which Kate are You"](http://topshop.com/katemoss) and [“What’s your tribe”](http://www.topshop.com/en/tsuk/category/topshop-magazine-2663381/whats-your-tribe-4173133?intcmpid=Zine_Shop_Quiz)
+- **Africa Check website** - [africacheck.org](http://africacheck.org) WordPress powered site for journalists in Africa
 - **Marie Stopes International** - [mariestopes.org](http://mariestopes.org/data-research) Charting and data visualisations built with javascript using Dojo Toolkit, and integrated with Drupal 7.
 
 ## Employment history 
 ### April 2012 - Present: Self-employed, admataz
-I have returned to self-employment and contract work. I have been working on a range of contract assignments and projects, including recently:  
+I run a small company providing organisations and creative agencies with the skills and consultancy to develop original, niche and bespoke websites. More information at [admataz.com](http://admataz.com)
 
-- **The Elders** - Ongoing development of The Elders website
-- **Topshop** - quick job - a quiz web app for launch of the Kate Moss 2014 range
+#### Contract work
+- **House of Fraser** (2016-2017) - Senior Developer with the in-house Front End Developer team for the ‘replatforming’ of the HoF eCommerce website. I was fixing defects and developing features; helping to lead and mentor the team; researching and piloting new technical approaches and architectures; developing PCI-compliant code for online payments; managing deployment and DevOps; liaising with delivery partner; and consulting with management about continuous improvement to processes. 
+- **TAG Digital** (2015) - Senior Drupal Developer on various projects
+- **VCCP** (2014) - Wordpress developer for property developer website
+- **The App Business** (2012)- PHP web services developer for an iPad app for Unilever 
+- **AKA London** (2012) - Wordpress developer
+- **McCann Erickson** (2012) -  custom CMS for client's corporate intranet and website
+
+
+#### Client consultancy and development work
+
+- **Girls not Brides** - development of Interactive Theory of Change
+- **Pebble{code}** (2015) - adaptation of existing complex static Angular web app to Drupal  - an internal project for AstraZeneca
+- **Nimbletank** - Web services development, technical architecture and supporting Content Management Tools for mobile apps: [Sky Sports Soccer Quiz](http://www.skysports.com/mobile/apps/9829697/sky-sports-soccer-quiz), [Crowdsurf](https://itunes.apple.com/gb/app/crowdsurf-makeparty/id1009290687?mt=8), [Ask Bobbi](http://www.bobbibrown.co.uk/askbobbi)
+- **The Elders** - Ongoing development of [The Elders website](http://theelders.org)
+- **Africa Check** - website for [Africa Check](https://africacheck.org) (using WordPress). 
+- **Parentzone** - Drupal development for their [new website](http://parentzone.org.uk)
+- **Topshop** - a quiz web app for launch of the Kate Moss 2014 range, and again in 2015 for “What’s your tribe”
 - **NOW: Pensions** - a range of ongoing custom WordPress plugins to enhance their existing website. 
-- **Kofi Annan Foundation** - developed and support the new Drupal 7 website
-
+- **Kofi Annan Foundation** - development and support for [kofiannanfoundation.org](http://www.kofiannanfoundation.org)
 - **33 Digital** - developed a WordPress website for Anywhere Working and a JavaScript quiz app for Pega Systems
-- **Long White Digital** - websites for Africa Check (using WordPress). A prototype site for campaigns and actions for Oxfam UK (MVC/PHP). 
 - **Bookswarm** -  content management and import tools for book publishers and resellers
 - **National Housing Federation** - a data visualisation layer to Google Maps 
-
 
 ### October 2010 - March 2012: Senior Web Developer, Provokateur
 Provokateur is a small agency with a focus on serving clients from the 3rd-sector, mostly charities and non-profits. I managed all aspects of technical production and process. Clients I worked with include The Elders, IFAW, Kofi Annan Foundation, Marie Stopes International, Body & Soul, Octavia Foundation, Open Fundraising, Oxfam, Tear Fund, Prison Reform Trust. 
@@ -85,12 +104,8 @@ I founded a small independent studio, working in collaboration with other design
 ### January - June 2005, 2004:  Lecturer, University of Cape Town
 I developed and presented a course called "*Principles of Design for Interactive Media*" for 3rd year students of Film and Visual Media. I prescribed reading material, created exercises and set and marked my students' projects.
  
-### Freelance, Contract and Agency Experience
-- ** 
-- **Nimbletank/ The Bio Agency** - Drupal 7 CMS for web service for an iPhone app (still to be released) 
-- **The App Business**  - bespoke CMSs and web services for iOS apps using CodeIgniter/PHP. 100% Agile processes.
-- **McCann Erickson** -  custom CMS for client's corporate intranet and website
-- October 2006 - February 2007  **Clinic London** Farringdon, London  
+### Previous freelance, contract and agency experience
+- October 2006 - February 2007  **Clinic London** Farringdon, London - before being hired as a permanent member of staff… 
 - August - December 2002 **Banner Co.** Chelsea Harbour, London  
 - April - June 2002  **Western Cape Education Department** Cape Town  
 - April - June 2002 **Orange Films** City, Cape Town  
@@ -121,8 +136,10 @@ I developed and presented a course called "*Principles of Design for Interactive
 
 
 ## Profile
-I find inspiration in the diversity of people around me. London has always been great for that. Now as dad to two great small kids, I love the games, toys, play and adventures we have around town. I graduated as an environmental and geographical scientist in 1995, and I continue to visualise interactive systems as spatial entities for human interaction. The continually evolving and emergent relationships between people, culture, location and technology are what got me excited about digital media in the first place, and still today I am not disappointed.
+I graduated as an environmental and geographical scientist in 1995, and I continue to visualise interactive systems as spatial entities for human interaction. The continually evolving and emergent relationships between people, culture, location and technology are what got me excited about digital media in the first place, and still today I am not disappointed.
+
+Over the years I have extended myself to interaction design, information architecture, education, game design, business strategy and project management, but at the core has always been the mechanics of web technologies: code, data and people. I love the web: to a technologist like me it is a giant puzzle and playground. And as a platform for people, ideas and culture, it is my passion.
+
+I find inspiration in the diversity of people around me and London has always been great for that. Now as dad to two great smart kids, I love the games, toys, play and adventures we have around town. 
  
 For more information and samples of my work please visit my website: [www.admataz.com](http://admataz.com).
-
-
