@@ -17,22 +17,20 @@
     "license": "MIT",
     "dependencies": {
         "async": "^2.1.4",
-        "blockstatic": "^1.1.3",
-        "browserify": "^14.0.0",
-        "fs-extra": "^2.0.0",
         "jquery": "^3.1.1",
         "lodash": "^4.6.1",
-        "node-sass": "^4.3.0",
         "react": "^15.4.2",
         "react-dom": "^15.4.2"
     },
     "devDependencies": {
-        "blockstatic": "^1.1.2",
+        "blockstatic": "^1.1.3",
+        "browserify": "^14.0.0",
+        "fs-extra": "^2.0.0",
         "eslint": "^3.14.1",
         "fsmonitor": "^0.2.4",
         "node-static": "^0.7.9",
+        "node-sass": "^4.3.0",
         "reactify": "^1.1.1",
-        "uglify": "^0.1.5",
         "uglify-js": "^2.6.2"
     }
 }

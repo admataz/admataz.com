@@ -11,7 +11,7 @@
     {
       "title": "Abbas",
       "descr": "Abbas and the Revolution is an attempt to showcase some of the photographs of one of the most important photographers of our time about one of the most important events of the 20th century.",
-      "links": [{"linkUrl": "http://abbas.site", "linkTitle": "Abbas.site"}],
+      "links": [{"linkUrl": "http://abbas.site", "linkTitle": "abbas.site"}],
       "logo": "abbas.jpg",
       "id": "abbas"
     },{
@@ -34,9 +34,9 @@
     "id": "africa-check"
   }, {
     "title": "Kofi Annan Foundation",
-    "descr": "The Kofi Annan Foundation aims to promote better global governance and strengthen the capacities of people and countries to achieve a fairer, more secure world. admataz developed the Kofi Annan Foundation website using Drupal.",
+    "descr": "The Kofi Annan Foundation aims to promote better global governance and strengthen the capacities of people and countries to achieve a fairer, more secure world. admataz developed an earlier version of the Kofi Annan Foundation website using Drupal.",
     "logo": "kofiannan.jpg",
-    "links": [{"linkUrl": "http://www.kofiannanfoundation.org", "linkTitle": "kofiannanfoundation.org"}],
+    "links": [{"linkUrl": "http://www.kofiannanfoundation.org", "linkTitle": "kofiannanfoundation.org (since updated)"}],
     "id": "kofi-annan-foundation"
   },
    {
@@ -64,10 +64,10 @@
     "links": [{"linkUrl": "http://nowpensions.com", "linkTitle": "nowpensions.com"}],
     "id": "now-pensions"
   }, {
-    "title": "Internationl Refugee Trust",
+    "title": "International Refugee Trust",
     "descr": "International Refugee Trust (IRT) was founded in 1989 to help improve the lives of refugees, internally displaced people and returnees around the world. Admataz helped build their donation page, integrate it with Stripe payment gateway and generate custom reports for Gift Aid contributions ",
     "logo": "irt-logo.png",
-    "links": [{"linkUrl": "http://irt.org", "linkTitle": "irt.org"}],
+    "links": [{"linkUrl": "http://irt.org.uk", "linkTitle": "irt.org.uk"}],
     "id": "irt"
   }, {
     "title": "Marie Stopes International data visualisations",
@@ -82,13 +82,6 @@
     "links": [{"linkUrl": "http://www.housing.org.uk/", "linkTitle": "housing.org.uk"}],
     "id": "national-housing-federation"
     },
-    {
-    "title": "Homeless Veterans Christmas Appeal 2014",
-    "descr": "The Independent and Evening Standard came together in partnership with ABF The Soldiers’ Charity and Veterans Aid to support veterans and their families struggling with housing issues. admataz helped digital agency Long White Digital with the build of the donations page and integration with Stripe online payment system.",
-    "logo": "homeless-veterans.png",
-    "links": [{"linkUrl": "http://donate.homelessveterans.co.uk", "linkTitle": "donate.homelessveterans.co.uk"}],
-    "id": "homeless-veterans"
-  },
   {
     "title": "Pebble {code}",
     "descr": "Design Thinking, Rapid Prototyping and Agile Software Development. admataz worked on an internal product for a client, creating a Drupal CMS and API for an angular front end",
@@ -99,9 +92,13 @@
 
   {
     "title": "Nimbletank",
-    "descr": "An award winning strategic thinking cross platform, mobile application and mobile website agency. admataz worked on a contract to develop a Drupal based admin system and web service to an iPhone app for Bobbi Brown.",
+    "descr": "An award winning strategic thinking cross platform, mobile application and mobile website agency. admataz worked on web services development, technical architecture and supporting Content Management Tools for mobile apps for Sky Sports Soccer Quiz, Crowdsurf, and Ask Bobbi.",
     "logo": "nimbletank.png",
-    "links": [{"linkUrl": "http://nimbletank.com", "linkTitle": "nimbletank.com"}],
+    "links": [
+      {"linkUrl": "http://www.skysports.com/mobile/apps/9829697/sky-sports-soccer-quiz", "linkTitle": "Sky Sports Soccer Quiz"},
+      {"linkUrl": "https://itunes.apple.com/gb/app/crowdsurf-makeparty/id1009290687?mt=8", "linkTitle": "Crowdsurf"},
+      {"linkUrl": "http://www.bobbibrown.co.uk/askbobbi", "linkTitle": "Ask Bobbi"},
+      {"linkUrl": "http://nimbletank.com", "linkTitle": "nimbletank.com"}],
     "id": "nimbletank"
   },{
     "title": "Tag Worldwide",
