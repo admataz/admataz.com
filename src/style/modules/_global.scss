@@ -4,7 +4,6 @@
     // src: url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.woff") format("woff"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.ttf") format("truetype"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.svg#TravelingTypewriter") format("svg");
 }
 
-
 body {
     color: #333;
     margin: 0;
@@ -14,16 +13,18 @@ body {
     background-attachment: fixed;
     background-position: -300px -100px;
     // font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', serif;
-    font-family: "museo-slab",serif;
-
+    font-family: "museo-slab", serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     /*          margin:0; */
     font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', serif;
-
 }
-h1{
+
+h1 {
     font-size: 28px;
     font-weight: bold;
     padding: 0;
@@ -42,16 +43,15 @@ p {
 h2 {
     color: #c30;
     font-size: 24px;
-    margin: 0;
+    margin: 0 0 10px 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
 }
 
 h3 {
-    margin: 0;
+    margin: 10px 0 0 0;
     padding: 0;
-
 }
 
 code {
@@ -62,18 +62,18 @@ code {
     background-color: rgba(204, 204, 204, 0.5);
 }
 
-a{
+a {
     text-decoration: none;
     color: #666;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-a:hover{
-    color:#c30;
-
+a:hover {
+    color: #c30;
 }
 
-.cf:before, .cf:after {
+.cf:before,
+.cf:after {
     content: " ";
     /* 1 */
     display: table;
@@ -84,14 +84,12 @@ a:hover{
     clear: both;
 }
 
-
-.screenshots{
-    width:100%;
-    img{
-    max-width: 95%;
-
-    border: 4px solid #ccc;
-    padding: 4px;
-    margin: 4px;
+.screenshots {
+    width: 100%;
+    img {
+        max-width: 95%;
+        border: 4px solid #ccc;
+        padding: 4px;
+        margin: 4px;
     }
 }
