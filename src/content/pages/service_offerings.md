@@ -2,9 +2,7 @@
 published: true
 ---
 
-<div class="intro">
-admataz is a web development consultancy in London, UK - owned and operated by [Adam Davis](/adam-davis). I provide organisations and creative agencies with products and services for original, niche and bespoke websites.
-</div>
+
 
 ## web apps
 Modular pieces of interactive content for your website. We build maps, games, quiz apps, data visualisations, charts, calculators and functional tools that are easily embedded in your site pages.  
