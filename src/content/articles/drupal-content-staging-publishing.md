@@ -7,8 +7,7 @@ title: Staging and deploying content in Drupal
 published: true
 ---
 
-Staging content and managing publication of content to live using Drupal
-========================================================================
+# Staging content and managing publication of content to live using Drupal
 
 A website backed by a Content Management System can be great for site owners. The CMS allows the writers editors to do what they do best; once the site is launched they can keep it up to date with great new articles and pages.  Bar the odd support call and feature addition, the web developers can be left to tend to their yachts. Everyone wins. Or so the theory goes. 
 

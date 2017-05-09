@@ -7,8 +7,7 @@ title: A "Messages of Support" module.
 published: false
 ---
 
-A "Messages of Support" module for Drupal
-==========================================
+# A "Messages of Support" module for Drupal
 
 The Elders work across a range of global issues which evoke expressions of support from people affected by their work. We wanted a way to capture these expressions and allow people to share them with other users of the site. 
 

@@ -18,17 +18,23 @@ var defaultOptions = {
   }
 };
 
+var articleOptions = Object.assign({}, defaultOptions );
+articleOptions.templates = {
+  "html": "./src/templates/html.handlebars",
+  "page": "./src/templates/page_article.handlebars"
+}
+
 
 function init(callback){
     async.series([
       (cb) => {
-        blockstatic.buildPages('./src/content/articles', './dist/articles', defaultOptions, cb);
+        blockstatic.buildPages('./src/content/articles', './dist/articles', articleOptions, cb);
       },
       (cb) => {
         blockstatic.buildPages('./src/content/pagedata', './dist', defaultOptions, cb);
       },
       (cb) => {
-        blockstatic.buildPages('./src/content/case_studies', './dist/case-studies', defaultOptions, cb);
+        blockstatic.buildPages('./src/content/case_studies', './dist/case-studies', articleOptions, cb);
       }
     ],
       (err) => {

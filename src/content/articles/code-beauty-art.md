@@ -1,6 +1,6 @@
 ---
 author: Adam Davis  
-date: 2012-01-16  
+date: 2012-01-01  
 description: "Some thoughts on code, beauty and art: my response to a request from a journalist."
 keywords: code, beauty, art, opinion,  
 title: code, beauty and art.

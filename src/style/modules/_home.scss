@@ -1,4 +1,19 @@
-#services-detail{
-
+#services-detail {
   margin: 10px 0;
+}
+
+#notes-and-observations {
+  border-top: 1px solid #999;
+  padding: .5em;
+  @media (min-width: 1024px) {
+    border-top: none;
+    padding:0;
+  }
+}
+
+.col-2 {
+  @media (min-width: 1024px) {
+    width:50%;
+    float: left;
+  }
 }

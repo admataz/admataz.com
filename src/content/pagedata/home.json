@@ -17,5 +17,12 @@
     "templates": {
         "page": "./src/templates/page_home.handlebars",
         "html": "./src/templates/html.handlebars"
+    },
+     "indexPages": {
+        "articlesIndex": {
+            "inputPath": "./src/content/articles",
+            "template": "./src/templates/pageIndexes/pageIndexList.handlebars",
+            "outputPath": "/articles"
+        }
     }
 }

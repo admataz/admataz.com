@@ -3,10 +3,9 @@ author: Adam Davis
 date: 2014-01-12
 description: A simple implementation of Strip.io in WordPress
 keywords: stripe.io, wordpress, ecommerce, online payments
-title: A simple stripe.io payment gateway implementation in WordPress.
+title: A  stripe.io payment gateway implementation in WordPress.
 published: false
 
 ---
 
-A simple stripe.io payment gateway implementation in WordPress
-============================================================
+# A  stripe.io payment gateway implementation in WordPress

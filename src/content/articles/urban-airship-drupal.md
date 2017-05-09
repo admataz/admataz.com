@@ -10,8 +10,8 @@ published: false
 ---
 
 
-Sending location aware rich push notifications to iPhones from Drupal using Urban Airship
-====================================================================
+# Sending location aware rich push notifications to iPhones from Drupal using Urban Airship
+
 
 How we reinvented geofencing to offer more flexibility and customisation 
 
@@ -26,8 +26,8 @@ How we reinvented geofencing to offer more flexibility and customisation
 - generated locations as audience segments
 
 
-Custom objects - to unite a series of APIs and send messages according to predefined rules
-------------
+## Custom objects - to unite a series of APIs and send messages according to predefined rules
+
 - Message processor
 	- gets all active messages - loops through and sends
 - Message

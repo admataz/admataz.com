@@ -1,35 +1,40 @@
 
     <div id="blocks"></div>
-    <div class="container one-col">
+    <div class="container two-col">
       <div id="content-main">
 
-        <div id="services-detail">
-        {{!--{{{docs.services.html}}}--}}
-        </div>
 
-
+        
+        <div class="col-2">
         {{{docs.about.html}}}
+        
+        <div id="services-detail">
         {{{docs.page.html}}}
+        </div>
 
         <div id="info-x" class="cf">
             {{{ elements.clientList }}}
         </div>
 
+        
+        {{{docs.services.html}}}
+        
+      </div>
+      <div class="col-2">
+          <h2 id="notes-and-observations">notes and observations</h2>
+          <div id="articlesList">
+         {{{indexPages.articlesIndex}}}
+        </div>
+        </div>
 
-        <div id="site-links">
-        {{!--{{{docs.site-links.html}}}--}}
+        
+
       </div>
 
-
-        <div id="contact-detail">
-        {{!--{{{docs.contact.html}}}--}}
-      </div>
 <div class="project-info">
+    <div id="site-links">
+        {{{docs.site-links.html}}}
+      </div>
 {{{docs.contact.html}}}
 </div>
-      </div>
-    </div>
-    <div class="container">
-
-
     </div>

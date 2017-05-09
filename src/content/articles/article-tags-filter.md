@@ -9,8 +9,8 @@ published: true
 
 
 
-Article list tag filter in Drupal
-=================================
+# Article list tag filter in Drupal
+
 
 A site that publishes articles regularly can, over time, bury older relevant content.
 

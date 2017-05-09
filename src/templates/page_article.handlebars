@@ -3,7 +3,10 @@
       <div class="container">
         <ul class="breadcrumb cf"><li><a href="/">admataz.com</a></li><li><a href="/articles">articles</a></li><li>{{docs.page.meta.title}}</ul>
         <div id="content-main">
-        {{{docs.page.html}}}
+          <article>
+                <div class="datestamp">{{dateFormat docs.page.meta.date}}</div>
+            {{{docs.page.html}}}
+          </article>
         </div>
         <div class="footer">
                 {{{docs.about.html}}}
@@ -13,4 +16,3 @@
          {{{docs.contact.html}}}
         </div>
       </div>
-

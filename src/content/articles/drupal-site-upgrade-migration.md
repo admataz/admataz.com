@@ -7,8 +7,7 @@ title: Migrating a large active and customised Drupal 6 site to Drupal 7
 published: true
 ---
 
-Migrating a large active and customised Drupal 6 site to Drupal 7
-=================================================================
+# Migrating a large active and customised Drupal 6 site to Drupal 7
 
 We had an existing customised Drupal 6 site that needed some general updates, and we thought, while we were here working on themes and features, let's to do a major upgrade the Drupal framework too!  This was a a bigger job than we had anticipated - but on reflection still the right thing to do.   
 
