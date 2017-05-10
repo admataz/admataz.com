@@ -2,8 +2,7 @@
 published: true
 ---
 
-<!--If you have the vision and you need the technical know-how to make it happen, get in touch:  -->
-admataz is available for freelance consulting, project collaborations and contract development.
+**If you have the vision and you need the technical know-how to make it happen, get in touch:**
 
 Adam Davis  
 adam at admataz dot com  

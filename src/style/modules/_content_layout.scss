@@ -26,7 +26,6 @@
     margin: auto;
     position: relative;
     z-index: 10;
-    padding: 2em;
 }
 
 #content-main {
@@ -48,6 +47,9 @@
         @media (min-width: 1024px) {
             padding: 1em;
             margin: 1em;
+        }
+        img{
+        width: 100%;
         }
     }
     blockquote {

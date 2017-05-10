@@ -1,5 +1,6 @@
 #services-detail {
   margin: 10px 0;
+  font-weight: bold;
 }
 
 #notes-and-observations {
@@ -13,7 +14,15 @@
 
 .col-2 {
   @media (min-width: 1024px) {
-    width:50%;
+    width:45%;
+    margin-left: 5%;
     float: left;
   }
+  
 }
+
+.col-2.first{
+    @media (min-width: 1024px) {
+     margin-left:0;
+    }
+  } 

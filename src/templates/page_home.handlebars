@@ -2,22 +2,30 @@
     <div id="blocks"></div>
     <div class="container two-col">
       <div id="content-main">
-
-
         
-        <div class="col-2">
-        {{{docs.about.html}}}
+
+    <h1>{{ docs.page.meta.title }}</h1>
+        
+        <div class="col-2 first">
         
         <div id="services-detail">
-        {{{docs.page.html}}}
+        {{{docs.about.html}}}
         </div>
+
+        {{{docs.page.html}}}
 
         <div id="info-x" class="cf">
             {{{ elements.clientList }}}
         </div>
 
-        
+    
         {{{docs.services.html}}}
+        {{{docs.contact.html}}}
+        
+
+        <div id="site-links">
+        {{{docs.site-links.html}}}
+      </div>
         
       </div>
       <div class="col-2">
@@ -31,10 +39,5 @@
 
       </div>
 
-<div class="project-info">
-    <div id="site-links">
-        {{{docs.site-links.html}}}
-      </div>
-{{{docs.contact.html}}}
-</div>
+       
     </div>
