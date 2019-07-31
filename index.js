@@ -6,7 +6,7 @@ var styles = require('./buildtasks/styles');
 var assets = require('./buildtasks/assets');
 
 
-async.series([
+ async.series([
     content,
     scripts,
     styles,
@@ -18,3 +18,4 @@ async.series([
     console.log('Compiled Site!');
 
 });
+

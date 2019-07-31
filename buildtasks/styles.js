@@ -2,9 +2,6 @@ var fs = require('fs-extra');
 var async = require('async');
 var sass = require('node-sass');
 
-
-
-
 function init(callback) {
     async.series([
             (cb) => {
@@ -12,7 +9,7 @@ function init(callback) {
                     file: './src/style/main.scss',
                     sourceMap: true,
                     outputStyle: 'compressed'
-                }, function(err, result) {
+                }, function (err, result) {
                     if (err) {
                         return cb(err);
                     }
@@ -31,17 +28,13 @@ function init(callback) {
     );
 }
 
-
 module.exports = init;
 
-
 if (!module.parent) {
-    init(function(err) {
+    init(function (err) {
         if (err) {
             return console.log(err);
         }
-
         console.log('Compiled Styles!');
-
     })
 }

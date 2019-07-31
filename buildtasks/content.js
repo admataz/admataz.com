@@ -3,7 +3,6 @@ var jf = require('jsonfile');
 var blockstatic = require('blockstatic');
 var async = require('async');
 
-
 var defaultOptions = {
   "docs": {
     "contact": "./src/content/pages/contact-short.md",
@@ -39,14 +38,11 @@ articleOptions.templates = {
   "page": "./src/templates/page_article.handlebars"
 }
 
-
 var casestudyOptions = Object.assign({}, defaultOptions );
 casestudyOptions.templates = {
   "html": "./src/templates/html.handlebars",
   "page": "./src/templates/page_article.handlebars"
 }
-
-// console.log(articleOptions);
 
 function init(callback){
     async.series([
@@ -94,15 +90,12 @@ function init(callback){
     );
 }
 
-
 module.exports = init;
 if (!module.parent) {
     init(function(err){
         if(err){
             return console.log(err);
         }
-
         console.log('Compiled Content!');
-
     })
 }

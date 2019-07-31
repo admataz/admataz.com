@@ -1,6 +1,19 @@
 {
   "clients": [
-
+    {
+      "title": "NearForm",
+      "descr": "Our team of more than 120 exceptional people, distributed throughout the world, build better software faster.",
+      "links": [{"linkUrl": "http://nearform.com", "linkTitle": "NearForm"}],
+      "logo": "nearform-new.jpg",
+      "id": "nearform"
+    },
+    {
+      "title": "The Elders",
+      "descr": "The Elders is an independent group of global leaders who work together for peace and human rights. admataz built, and continues to develop, support and maintain their Drupal website.",
+      "links": [{"linkUrl": "http://theelders.org", "linkTitle": "theelders.org"}],
+      "logo": "theelders.jpg",
+      "id": "the-elders"
+    },
     {
       "title": "House of Fraser",
       "descr": "House of Fraser are a famous high street department store that has a large ecommerce website. admataz is helping the in-house front end development team build the next version.",
@@ -15,12 +28,6 @@
       "logo": "abbas.jpg",
       "id": "abbas"
     },{
-    "title": "The Elders",
-    "descr": "The Elders is an independent group of global leaders who work together for peace and human rights. admataz built, and continues to develop, support and maintain their Drupal website.",
-    "links": [{"linkUrl": "http://theelders.org", "linkTitle": "theelders.org"}],
-    "logo": "theelders.jpg",
-    "id": "the-elders"
-  },{
     "title": "Girls Not Brides 'Theory of Change'",
     "descr": "Girls Not Brides is a global partnership of more than 400 civil society organisations from over 60 countries working to address child marriage. admataz helped develop the online interactive version of their 'Theory of Change' - a document detailing a range of strategies needed to end child marriage.",
     "links": [{"linkUrl": "http://www.girlsnotbrides.org/child-marriage-theory-of-change/", "linkTitle": "girlsnotbrides.org/child-marriage-theory-of-change/"}],
