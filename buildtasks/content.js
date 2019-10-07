@@ -44,9 +44,23 @@ casestudyOptions.templates = {
   page: "./src/templates/page_article.handlebars"
 };
 
+var codeOptions = {baseUrl: '/codewords'};
+codeOptions.templates = {
+  html: "./src/templates/html.handlebars",
+  page: "./src/templates/page.minimal.handlebars",
+};
+
 function init(callback) {
   async.series(
     [
+      cb => {
+        blockstatic.buildPages(
+          "./src/content/code",
+          "./dist/codewords",
+          codeOptions,
+          cb
+        );
+      },
       cb => {
         blockstatic.buildPages(
           "./src/content/articles",

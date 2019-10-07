@@ -11,11 +11,11 @@ function init(callback) {
     [
       cb => {
         var b = browserify({
-          transform: [reactify]
+          // transform: [reactify]
         });
         // b.add('./src/components/admataz_logo');
-        b.add("./src/components/admataz_blocks");
-        b.add("./src/components/client_list");
+        // b.add("./src/components/admataz_blocks");
+        // b.add("./src/components/client_list");
 
         b.bundle(function(err, buff) {
           if (err) {
@@ -24,7 +24,7 @@ function init(callback) {
           // console.log(buff.toString());
           fs.outputFile(
             "./dist/js/components.js",
-            uglify.minify(buff.toString(), { fromString: true }).code,
+            uglify.minify(buff.toString()).code,
             cb
           );
           // fs.outputFile('./dist/js/components.js', buff, cb);
