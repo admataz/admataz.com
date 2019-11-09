@@ -1,8 +1,11 @@
 <div class="articles-list">
   {{#each docs}}
   <div class="article">
+    {{#each meta.img}}
+      {{this}}
+    {{/each}}
     <div class="datestamp">{{dateFormat meta.date}}</div>
-    <h3><a href='{{path}}'>{{meta.title}}</a></h3>
+    <h3><a href='{{path}}'>{{meta.title}}sss</a></h3>
     <p>{{meta.description}}</p>
   </div>
   {{/each}}

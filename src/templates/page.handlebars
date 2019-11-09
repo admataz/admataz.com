@@ -1,13 +1,34 @@
-<div id="blocks"></div>
 <div class="container">
-  <div id="content-main">
-    {{{docs.page.html}}}
+
+  <div class="content-header">
   </div>
-  <div class="footer">
-    {{{docs.about.html}}}
-    <div id="site-links">
-      {{{docs.site-links.html}}}
+
+  <div id="content-main">
+
+    {{{docs.page.body}}}
+
+    {{#if indexPages.listIndex }}
+    <div class="articles-list">
+      {{#each indexPages.listIndex}}
+      <div class="article">
+        {{#each meta.img}}
+          {{this}}
+        {{/each}}
+        <div class="datestamp">{{dateFormat meta.date}}</div>
+        <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
+        <p>{{meta.description}}</p>
+      </div>
+      {{/each}}
     </div>
-    {{{docs.contact.html}}}
+    {{/if}}
+  </div>
+
+  <div id="content-aside">
+
+  </div>
+
+
+  <div class="content-footer">
+
   </div>
 </div>

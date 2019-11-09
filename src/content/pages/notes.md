@@ -7,12 +7,15 @@ keywords: "code, adam davis, web"
 published: true
 indexPages: 
     listIndex:
-        inputPath: "./src/content/case-studies"
+        inputPath: "./src/content/notes"
         template: "./src/templates/pageIndexes/pageIndexList.handlebars"
-        outputPath: "/case-studies"
-        limit: 0
+        outputPath: "/notes"
+        limit: 20
 ---
 
 # admataz - modules, plugins and apps
 
 useful things
+
+
+

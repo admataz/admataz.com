@@ -1,145 +1,110 @@
-var fs = require("fs-extra");
-var jf = require("jsonfile");
-var blockstatic = require("blockstatic");
-var async = require("async");
+#!/usr/bin/env node
 
-var defaultOptions = {
+const fs = require("fs").promises;
+const jf = require("jsonfile");
+const blockstatic = require("blockstatic");
+
+const defaultOptions = {
   docs: {
-    contact: "./src/content/pages/contact-short.md",
-    about: "./src/content/pages/about-short.md",
-    "site-links": "./src/content/pages/site-links.md"
+    "main-nav": "./src/content/docs/main-nav.md",
+    "admataz-logo": "./src/content/docs/admataz-logo.md"
   },
-  data: {
-    common: "./src/content/data/global-content.json"
-  },
+  // data: {
+  //   common: "./src/content/data/global-content.json"
+  // },
   templates: {
     html: "./src/templates/html.handlebars",
     page: "./src/templates/page.handlebars"
   },
   site: {
     title: "admataz - code and javascript",
-    home_page_url: "http://admataz.com",
-    feed_url: "http://admataz.com/feed.json",
+    homePageUrl: "http://admataz.com",
+    feedUrl: "http://admataz.com/feed.json",
     description: "Site for admataz",
-    item_root: "http://admataz.com/"
-  },
-  rss: {
-    title: "admataz - code and javascript",
-    home_page_url: "http://admataz.com",
-    feed_url: "http://admataz.com/feed.xml",
-    description: "Site for admataz",
-    item_root: "http://admataz.com/"
+    itemRoot: "http://admataz.com/"
   }
 };
 
-var articleOptions = Object.assign({}, defaultOptions);
-articleOptions.templates = {
-  html: "./src/templates/html.handlebars",
-  page: "./src/templates/page_article.handlebars"
-};
+const feeds = [
+  {
+    srcDir: "./src/content/code-ideas",
+    baseUrl: "/code-ideas",
+    dest: "./dist/code-ideas"
+  },
+  {
+    srcDir: "./src/content/module-apps",
+    baseUrl: "/module-apps",
+    dest: "./dist/module-apps"
+  },
+  {
+    srcDir: "./src/content/case-studies",
+    baseUrl: "/case-studies",
+    dest: "./dist/case-studies"
+  },
+  {
+    srcDir: "./src/content/notes",
+    baseUrl: "/notes",
+    dest: "./dist/notes"
+  }
+];
 
-var casestudyOptions = Object.assign({}, defaultOptions);
-casestudyOptions.templates = {
-  html: "./src/templates/html.handlebars",
-  page: "./src/templates/page_article.handlebars"
-};
+async function init(src = [], options = {}) {
+  const sitefeeds = src.map(async ({ srcDir, dest, baseUrl }) => {
+    const feedsListSrc = await blockstatic.buildContentList(srcDir, baseUrl, 0);
+    const contentList = await blockstatic.buildPages(feedsListSrc, dest, {
+      ...options,
+      baseUrl
+    });
+    const compiledContent = await Promise.all(contentList)
+    
+    
+    const jsonFeed = blockstatic.jsonFeedTemplate(
+      compiledContent,
+      options.site
+    );
 
-var codeOptions = {baseUrl: '/codewords'};
-codeOptions.templates = {
-  html: "./src/templates/html.handlebars",
-  page: "./src/templates/page.minimal.handlebars",
-};
+    await jf.writeFile(`${dest}/index.json`, jsonFeed);
+  
+    const rssFeed = blockstatic.rssFeedTemplate(
+      compiledContent,
+      options.site
+    );
+    await fs.writeFile(`${dest}/index.xml`, rssFeed, 'utf8');
 
-function init(callback) {
-  async.series(
-    [
-      cb => {
-        blockstatic.buildPages(
-          "./src/content/code",
-          "./dist/codewords",
-          codeOptions,
-          cb
-        );
-      },
-      cb => {
-        blockstatic.buildPages(
-          "./src/content/articles",
-          "./dist/articles",
-          articleOptions,
-          cb
-        );
-      },
-      cb => {
-        blockstatic.buildPages(
-          "./src/content/pagedata",
-          "./dist",
-          defaultOptions,
-          cb
-        );
-      },
-      cb => {
-        blockstatic.buildPages(
-          "./src/content/case_studies",
-          "./dist/case-studies",
-          casestudyOptions,
-          cb
-        );
-      },
-      cb => {
-        blockstatic.jsonFeedPages(
-          "./src/content/articles",
-          "/articles",
-          articleOptions.site,
-          (err, jsonfeed) => {
-            if (err) {
-              return cb(err);
-            }
-            return jf.writeFile(`./dist/feed.json`, jsonfeed, cb);
-          }
-        );
-      },
-      cb => {
-        blockstatic.rssFeedPages(
-          "./src/content/articles",
-          "/articles",
-          articleOptions.rss,
-          (err, rssfeed) => {
-            if (err) {
-              return cb(err);
-            }
-            return fs.writeFile(`./dist/feed.xml`, rssfeed, cb);
-          }
-        );
-      },
-      cb => {
-        blockstatic.indexPages(
-          "./src/content/articles",
-          "/articles",
-          (err, jsonindex) => {
-            if (err) {
-              return cb(err);
-            }
-            return jf.writeFile(`./dist/articles/index.json`, jsonindex, cb);
-          }
-        );
-      }
-    ],
-    err => {
-      if (err) {
-        return callback(err);
-      }
-      console.log("Compiled Content!");
-      return callback(null);
-    }
+
+    return compiledContent
+  })
+
+  const pagesList = await blockstatic.buildContentList('./src/content/pages', '', 0);
+  const sitePages = blockstatic.buildPages(pagesList, "./dist", options)
+  const allfeeds = await Promise.all(sitefeeds)
+  
+  const siteRSSContent = allfeeds
+    .flat()
+    .sort((a, b) => (a.meta.date > b.meta.date ? -1 : 1))
+    .splice(0, 10)
+
+  const rssFeed = blockstatic.rssFeedTemplate(
+    siteRSSContent,
+    options.site
   );
+
+  const jsonFeed = blockstatic.jsonFeedTemplate(
+    siteRSSContent,
+    options.site
+  );
+  await jf.writeFile(`./dist/feed.json`, jsonFeed);
+  await fs.writeFile(`./dist/feed.xml`, rssFeed, 'utf8');
+
+  return Promise.all([
+    ...sitefeeds,
+    sitePages
+  ]);
 }
 
 module.exports = init;
 if (!module.parent) {
-  init(function(err) {
-    if (err) {
-      return console.log(err);
-    }
-    console.log("Compiled Content!");
-  });
+  init(feeds, defaultOptions)
+    .then(() => "compiled!")
+    .catch(err => console.log(err));
 }

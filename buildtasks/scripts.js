@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require("fs-extra");
 var async = require("async");
 var browserify = require("browserify");

@@ -5,6 +5,7 @@ description: "admataz case studies - NOW: Pensions calculator"
 keywords: web development, code, javascript, php, consultancy
 title: "NOW: Pensions calculator"
 published: true
+
 ---
 
 ## NOW: Pensions calculator
@@ -13,5 +14,7 @@ To help customers understand the benefits of their pension fund, [NOW: Pensions]
 Link: [Now: Pensions modeller](http://www.nowpensions.com/modellers/pension-fund-modeller/)
 
 <div class="screenshots">
+
 [![Pensions modeller screenshot](/assets/images/case-studies/nowmodeller.png)](http://www.nowpensions.com/modellers/pension-fund-modeller/)
+
 </div>
