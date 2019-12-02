@@ -11,6 +11,7 @@ docs:
 
 # Blockstatic site generator module
 
-Blockstatic is a node.js module for generating HTML from markdown and json. It provides a simple set of flexible tools that allows pages and collections of articles to be published with style and scripts.
+Blockstatic is an npm module for generating HTML from markdown and json. It provides a simple set of flexible tools that allows pages and collections of articles to be published with style and scripts.
 
 admataz.com is built with Blockstatic.
+

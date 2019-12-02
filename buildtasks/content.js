@@ -17,24 +17,34 @@ const defaultOptions = {
     page: "./src/templates/page.handlebars"
   },
   site: {
-    title: "admataz - code and javascript",
+    title: "admataz - code, tools, games and viz with javascript",
     homePageUrl: "http://admataz.com",
     feedUrl: "http://admataz.com/feed.json",
-    description: "Site for admataz",
+    description: "admataz is the web portfolio and professional showcase for Adam Davis",
     itemRoot: "http://admataz.com/"
   }
 };
 
 const feeds = [
   {
-    srcDir: "./src/content/code-ideas",
-    baseUrl: "/code-ideas",
-    dest: "./dist/code-ideas"
+    srcDir: "./src/content/code",
+    baseUrl: "/code",
+    dest: "./dist/code"
   },
   {
-    srcDir: "./src/content/module-apps",
-    baseUrl: "/module-apps",
-    dest: "./dist/module-apps"
+    srcDir: "./src/content/tools",
+    baseUrl: "/tools",
+    dest: "./dist/tools"
+  },
+  {
+    srcDir: "./src/content/games",
+    baseUrl: "/games",
+    dest: "./dist/games"
+  },
+  {
+    srcDir: "./src/content/viz",
+    baseUrl: "/viz",
+    dest: "./dist/viz"
   },
   {
     srcDir: "./src/content/case-studies",
@@ -56,22 +66,17 @@ async function init(src = [], options = {}) {
       baseUrl
     });
     const compiledContent = await Promise.all(contentList)
-    
-    
     const jsonFeed = blockstatic.jsonFeedTemplate(
       compiledContent,
       options.site
     );
-
     await jf.writeFile(`${dest}/index.json`, jsonFeed);
-  
     const rssFeed = blockstatic.rssFeedTemplate(
       compiledContent,
       options.site
     );
     await fs.writeFile(`${dest}/index.xml`, rssFeed, 'utf8');
-
-
+    
     return compiledContent
   })
 

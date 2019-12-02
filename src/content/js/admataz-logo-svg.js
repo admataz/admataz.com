@@ -70,6 +70,5 @@ function SVG(tag) {
     container.innerHTML='';
     container.appendChild(svg)
   }
-  
   makeLogo(document.getElementById("svg-logo"));
   

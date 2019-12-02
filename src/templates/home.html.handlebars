@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js {{ docs.page.meta.id }}">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        {{ docs.page.meta.title }}
+    </title>
+    <meta name="description" content="{{ docs.page.meta.description }}">
+    <meta name="keywords" content="{{ docs.page.meta.keywords }}">
+    <meta name="author" content="{{ docs.page.meta.author }}">
+    <meta name="viewport" content="width=device-width">
+    <meta property="og:title" content="{{ docs.page.meta.title }}" />
+    <meta property="og:url" content="https://admataz.com{{routePath}}/" />
+    <meta property="og:description" content="{{ docs.page.meta.description }}" />
+    <meta property="og:site_name" content="admataz. Web apps and bespoke web development, London UK" />
+    <meta property="og:image" content="https://admataz.com/assets/images/admataz_front.png" />
+    <link rel="alternate" title="admataz. Web apps and bespoke web development, London UK" type="application/json"
+        href="https://admataz.com/feed.json" />
+    <link rel="alternate" type="application/atom+xml" title="Blog" href="/feed.xml?type=blog" />
+    <link rel="stylesheet" href="https://use.typekit.net/btj3ebs.css">
+    <link rel="stylesheet" href="/main.css" />
+
+    {{#each assets.css}}
+    <link rel="stylesheet" href="{{this}}" />
+    {{/each}}
+    <script type="text/javascript" src="/assets/scripts/admataz-blocks.js"></script>
+</head>
+<body>
+
+    <admataz-blocks scale="32" definedylimit="12" gapfrequency="0.6" randomness="10">
+       
+    </admataz-blocks>
+
+
+
+
+    <div id="page-content-container">
+        <div id="top-bar">
+            <div class="main-nav">
+                {{{docs.main-nav.body}}}
+            </div>
+        </div>
+        <div id="content-main">
+            <div style="position:relative; height: 100%;">
+                {{{ pageContent }}}
+            </div>
+        </div>
+        <div id="footer-bar">
+            © adam davis 2019
+            <div class="logo">
+                    {{{docs.admataz-logo.body}}}
+                </div>
+        </div>
+    </div>
+
+    {{#each assets.js}}
+    <script type="text/javascript" src="{{this}}"></script>
+    {{/each}}
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+const scrolyBoxes = require('./admataz-blocks')

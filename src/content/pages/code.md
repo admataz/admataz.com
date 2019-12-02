@@ -5,15 +5,15 @@ date: "2019-10-07"
 description: "admataz"
 keywords: "code, adam davis, web"
 published: true
-id: page-code-ideas
+id: page-code
 indexPages: 
     listIndex:
-        inputPath: "./src/content/code-ideas"
+        inputPath: "./src/content/code"
         template: "./src/templates/pageIndexes/pageIndexList.handlebars"
-        outputPath: "/code-ideas"
+        outputPath: "/code"
         limit: 10
 
 ---
 
-# admataz - modules, plugins and apps
+# ongoing experiments
 

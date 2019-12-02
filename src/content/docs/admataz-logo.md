@@ -1,4 +1,6 @@
 ---
 published: true
 ---
-[![admataz logo](/assets/images/admataz-logo_bak.svg)](/)
+[![admataz logo](/assets/images/admataz-logo-black.svg)](/)
+
+

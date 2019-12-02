@@ -17,7 +17,7 @@
     font-weight: bold;
     /*background: rgba(255, 255, 255, 0.6);*/
 
-    background: #c30;
+    background: $highlight;
     text-align: center;
     font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', sans-serif;
 }
@@ -25,7 +25,7 @@
     background: rgba(204, 51, 0, 0.1);
 }
 .nextlink:hover a {
-    color: #c30;
+    color: $highlight;
 }
 .nextlink a {
     display: block;
@@ -35,7 +35,7 @@
     color: #fff;
 }
 .nextlink a:hover {
-    color: #c30;
+    color: $highlight;
     text-decoration: underline;
 }
 .nextlink-panel {
@@ -75,7 +75,7 @@
     line-height: normal;
     padding: 0 4px;
     line-height: 16px;
-    color: #c30;
+    color: $highlight;
 }
 .nextlink-panel a:visited {
     color: #999;
@@ -96,13 +96,13 @@ background: rgba(0, 153, 153, 0.1);
 a.morelink {
     display: block;
     text-align: right;
-    color: #c30;
+    color: $highlight;
     font-weight: bold;
     border-bottom: none;
 }
 .nextlink-panel a.morelink:hover {
     background: rgba(204, 51, 0, 0.1);
-    border-color: #c30;
+    border-color: $highlight;
 }
 .morelink:after {
     content: " ☞ ";

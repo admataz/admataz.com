@@ -1,0 +1,65 @@
+
+
+.main-nav {
+  width: 100%;
+  display: flex;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+  align-items: center;
+  padding: 8px;
+  // flex-direction: column;    
+  background-color: #fff; // rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #000;
+
+ 
+
+  ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      flex: 0 0 20%;
+      a {
+        font-family: nove, sans-serif;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        display: block;
+        border: 1px solid #666;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 4px 4px 4px #666;
+        border-radius: 3px;
+        background-color: #fff;
+        margin: 4px;
+        padding: 4px;
+      }
+      a:hover{
+          color: $selected;
+      }
+      list-style: none;
+      flex: 1;
+    }
+  }
+
+}
+
+%selected {
+  color: $selected;
+  box-shadow: none;
+  border-color: #999;
+  border: none;
+}
+
+@each $page in code, tools, viz, games {
+  .page-#{$page} {
+    .main-nav .#{$page} a {
+      @extend %selected;
+    }
+  }
+}

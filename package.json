@@ -18,11 +18,7 @@
   "author": "Adam Davis <adam@admataz.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "^3.1.0",
-    "jquery": "^3.1.1",
-    "lodash": "^4.6.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "async": "^3.1.0"
   },
   "devDependencies": {
     "blockstatic": "^2.0.0",
@@ -33,7 +29,6 @@
     "jsonfile": "^5.0.0",
     "node-sass": "^4.3.0",
     "node-static": "^0.7.9",
-    "reactify": "^1.1.1",
     "rimraf": "^3.0.0",
     "uglify-js": "^3.6.0"
   }

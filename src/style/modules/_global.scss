@@ -1,7 +1,9 @@
-@font-face {
-    // font-family: 'TravelingTypewriter';
-    // src: url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.eot");
-    // src: url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.woff") format("woff"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.ttf") format("truetype"), url("../assets/fonts/Traveling _Typewriter/travelingtypewriter.svg#TravelingTypewriter") format("svg");
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
 }
 
 body {
@@ -11,27 +13,23 @@ body {
     background: url(../assets/images/stereo-graticule2.svg);
     background-size: cover;
     background-attachment: fixed;
-    background-position: -100px -100px;
-    // font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', serif;
-    font-family: mr-eaves-sans, sans-serif;
+    font-family: freight-sans-pro, sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: fredericka-the-greatest, serif;
-    /*          margin:0; */
-    // font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', serif;
+
+
+// font-family: fredericka-the-greatest, serif;
 }
 
 h1 {
     font-size: 28px;
-    
     font-weight: bold;
     padding: 0;
     margin: .5em 0;
-    color: #c30;
     line-height: 130%;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -39,11 +37,11 @@ h1 {
 
 p {
     padding: 0;
-    margin: .4em 0 1em 0;
+    margin: 0;
 }
 
 h2 {
-    color: #c30;
+    color: $highlight;
     font-size: 20px;
     margin: 10px 0 ;
     padding: 0;
@@ -66,12 +64,13 @@ code {
 
 a {
     text-decoration: none;
-    color: #666;
+   
+    color: $highlight;
     font-weight: bold;
 }
 
 a:hover {
-    color: #c30;
+    color: #000;
 }
 
 .cf:before,

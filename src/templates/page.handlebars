@@ -1,18 +1,15 @@
-<div class="container">
 
-  <div class="content-header">
-  </div>
 
-  <div id="content-main">
-
+    <div class="body-content">
     {{{docs.page.body}}}
+
 
     {{#if indexPages.listIndex }}
     <div class="articles-list">
       {{#each indexPages.listIndex}}
       <div class="article">
         {{#each meta.img}}
-          {{this}}
+        {{this}}
         {{/each}}
         <div class="datestamp">{{dateFormat meta.date}}</div>
         <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
@@ -21,14 +18,7 @@
       {{/each}}
     </div>
     {{/if}}
-  </div>
-
-  <div id="content-aside">
-
-  </div>
+  
+    </div>
 
 
-  <div class="content-footer">
-
-  </div>
-</div>
