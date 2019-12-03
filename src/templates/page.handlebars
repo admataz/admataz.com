@@ -8,9 +8,9 @@
     <div class="articles-list">
       {{#each indexPages.listIndex}}
       <div class="article">
-        {{#each meta.img}}
-        {{this}}
-        {{/each}}
+        {{#if assets.img.[0]}}
+         <a href='{{routePath}}'><img src="{{../routePath}}{{assets.img.[0]}}" class="thumb" /></a>
+        {{/if}}
         <div class="datestamp">{{dateFormat meta.date}}</div>
         <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
         <p>{{meta.description}}</p>

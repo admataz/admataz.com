@@ -22,7 +22,11 @@
       margin:0;
       font-size:14px;
     }
-    
+    img.thumb{
+      max-width: 240px;
+      border: 1px solid #000;
+      box-shadow: 4px 4px 10px #333;
+    }
   }
 
 }

@@ -13,7 +13,7 @@ const defaultOptions = {
   //   common: "./src/content/data/global-content.json"
   // },
   templates: {
-    html: "./src/templates/html.handlebars",
+    html: "./src/templates/scrollbox.html.handlebars",
     page: "./src/templates/page.handlebars"
   },
   site: {

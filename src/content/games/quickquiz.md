@@ -9,6 +9,6 @@ docs:
 
 ---
 
-# filter find
+# quick quiz
 
-If there's one thing worse than asking the same question again and again, it's re-developing a quiz ap
+
