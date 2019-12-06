@@ -5,8 +5,9 @@ description: "A review of a recent adventure"
 keywords: "teamwork, tooling, climbing, management"
 title: "Teamwork in mountain climbing"
 published: true
-img: 
-    - "./src/assets/images/photo2.jpg"
+assets: 
+    img: 
+        - "./src/assets/images/photo2.jpg"
 ---
 
 # Teamwork in mountain climbing

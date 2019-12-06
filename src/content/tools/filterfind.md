@@ -5,11 +5,14 @@ date: "2019-10-07"
 description: "relevant content with a few easy clicks"
 keywords: "code, adam davis, web"
 published: true
-docs:
+assets:
+    img:
+        - "./src/content/tools/images/filterfind.gif"
+
 
 ---
 
-## Filterfind
+## Filter:Find
 
 > relevant content with a few easy clicks.
 

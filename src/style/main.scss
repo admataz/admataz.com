@@ -3,14 +3,14 @@ $selected: #c30;
 $highlight: #000;
 
 @import "modules/global";
+@import "modules/content_layout";
 @import "modules/main-nav";
 @import "modules/home";
-
-
-
-@import "modules/content_layout";
-
 @import "modules/articles";
+
+
+
+
 
 
 

@@ -9,6 +9,8 @@ assets:
     js: 
         - "./src/content/js/sparklines/vendor.js"
         - "./src/content/js/sparklines/sparklines.js"
+    img: 
+        - "./src/content/viz/images/sparklines.png"
 
 
 ---

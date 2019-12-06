@@ -5,6 +5,9 @@ description: "This visualisation experiment uses Mapbox GL to show the location 
 keywords: "visualisation, urban data,  javascript"
 title: "Visualisation: Trees of Camden"
 published: true
+assets: 
+    img: 
+        - "./src/assets/images/articles/TreesOfCamden.jpg"
 ---
 # Trees of Camden Visualised
 

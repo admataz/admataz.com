@@ -5,6 +5,10 @@ description: "My goal was, after a recent hiatus from data visualisation work, t
 keywords: "visualisation, urban data,  javascript"
 title: "Visualisation: Global city data"
 published: true
+assets: 
+    img: 
+        - "./src/assets/images/articles/cities-of-the-world.png"
+
 ---
 
 # Global city data, visualised

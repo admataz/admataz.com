@@ -2,26 +2,31 @@ html.page-home {
 
   .body-content{
     display: flex;
-    flex-wrap: wrap;
     background-color: transparent;
     justify-content: stretch;
     margin: 0 auto;
     h1{
       width: 100%;
     }
-    p{
-      padding: 20px;
-      border: 1px solid #000;
-      width: 320px;
-      height: 200px;
-      overflow: hidden;
-      background-color:rgba(255,255,255, 0.5);
-      margin: 16px;
-      box-shadow: 4px 4px 10px #000;
-    }
+    // p{
+    //   padding: 20px;
+    //   border: 1px solid #000;
+    //   width: 320px;
+    //   height: 200px;
+    //   overflow: hidden;
+    //   background-color:rgba(255,255,255, 0.5);
+    //   margin: 16px;
+    //   box-shadow: 4px 4px 10px #000;
+    // }
   
   }
+  .intro{
+    flex: 0 1 50%
+  }
 
+  .articles-list{ 
+    flex: 1;
+  }
   
   .logo{
     margin: 190px auto 0;
@@ -39,6 +44,7 @@ html.page-home {
       .main-nav{
         order: 40;
         border: none;
+        flex: 0 1 40px;
       }
       .logo{
         margin: 160px auto 0;

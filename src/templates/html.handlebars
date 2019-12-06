@@ -21,49 +21,50 @@
   <link rel="alternate" type="application/atom+xml" title="Blog" href="/feed.xml?type=blog" />
   <link rel="stylesheet" href="https://use.typekit.net/btj3ebs.css">
   <link rel="stylesheet" href="/main.css" />
+
   {{#each assets.css}}
   <link rel="stylesheet" href="{{this}}" />
   {{/each}}
   <script type="text/javascript" src="/assets/scripts/admataz-blocks.js"></script>
-
 </head>
 
 <body>
+  <div id="top-bar">
+    <div class="logo">
+      {{{docs.admataz-logo.body}}}
+    </div>
+    <div class="main-nav">
+      {{{docs.main-nav.body}}}
+    </div>
+  </div>
+
 
   <div id="page-content-container">
-
-      <div id="top-bar">
-      </div>
-      <div class="logo">
-        {{{docs.admataz-logo.body}}}
-      </div>
-
     <div id="content-main">
-      <div style="position:relative; height: 100%;">
-        <admataz-blocks scale="32" definedylimit="12" gapfrequency="0.6" randomness="10" containerwidth="1000">
-          {{{ pageContent }}}
-        </admataz-blocks>
-      </div>
+      <admataz-blocks scale="42" definedylimit="12" gapfrequency="0.7" randomness="10">
+        {{{ pageContent }}}
+      </admataz-blocks>
     </div>
 
-    <div class="main-nav">
+    <div class="main-nav bottom">
       {{{docs.main-nav.body}}}
     </div>
 
     <div id="footer-bar">
       © adam davis 2019
     </div>
-
   </div>
+
+  {{#each assets.js}}
+  <script type="text/javascript" src="{{this}}"></script>
+  {{/each}}
+
   <script>
     document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
     window.addEventListener('resize', () => {
       document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
     })
   </script>
-  {{#each assets.js}}
-  <script type="text/javascript" src="{{this}}"></script>
-  {{/each}}
 </body>
 
 </html>

@@ -6,13 +6,14 @@
 
     {{#if indexPages.listIndex }}
     <div class="articles-list">
-      {{#each indexPages.listIndex}}
+      {{#each indexPages.listIndex.pages}}
       <div class="article">
-        {{#if assets.img.[0]}}
-         <a href='{{routePath}}'><img src="{{../routePath}}{{assets.img.[0]}}" class="thumb" /></a>
-        {{/if}}
         <div class="datestamp">{{dateFormat meta.date}}</div>
         <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
+        {{#if assets.img.[0]}}
+         <a href='{{routePath}}'><img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" /></a>
+        {{/if}}
+        
         <p>{{meta.description}}</p>
       </div>
       {{/each}}

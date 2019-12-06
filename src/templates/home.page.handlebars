@@ -1,19 +1,27 @@
-<div class="main-nav">
-  <div class="logo">
-    {{{docs.admataz-logo.body}}}
+<div class="body-content">
+  <div class="intro">
+    {{{docs.page.body}}}
   </div>
 
 
-  {{{docs.main-nav.body}}}
-</div>
 
+  {{#if indexPages.listIndex }}
+  
 
+  <div class="articles-list">
+<h2>notes and observations</h2>
+    {{#each indexPages.listIndex.pages}}
+    <div class="article">
+      <div class="datestamp">{{dateFormat meta.date}}</div>
+      <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
+      {{#if assets.img.[0]}}
+      <a href='{{routePath}}'><img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" /></a>
+      {{/if}}
 
-
-<div class="content-footer">
-  all content and code &copy; adam davis 2019
-</div>
-
-
+      <p>{{meta.description}}</p>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
 
 </div>

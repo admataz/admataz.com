@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js {{ docs.page.meta.id }}">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,37 +27,35 @@
     {{/each}}
     <script type="text/javascript" src="/assets/scripts/admataz-blocks.js"></script>
 </head>
+
 <body>
-
-    <admataz-blocks scale="32" definedylimit="12" gapfrequency="0.6" randomness="10">
-       
-    </admataz-blocks>
-
-
-
-
     <div id="page-content-container">
-        <div id="top-bar">
-            <div class="main-nav">
-                {{{docs.main-nav.body}}}
-            </div>
-        </div>
         <div id="content-main">
-            <div style="position:relative; height: 100%;">
+            <admataz-blocks scale="42" definedylimit="18" gapfrequency="0.8" randomness="10">
+                <div class="logo">
+                    {{{docs.admataz-logo.body}}}
+                </div>
                 {{{ pageContent }}}
-            </div>
+            </admataz-blocks>
+        </div>
+        <div class="main-nav">
+            {{{docs.main-nav.body}}}
         </div>
         <div id="footer-bar">
             © adam davis 2019
-            <div class="logo">
-                    {{{docs.admataz-logo.body}}}
-                </div>
         </div>
     </div>
 
     {{#each assets.js}}
     <script type="text/javascript" src="{{this}}"></script>
     {{/each}}
+
+    <script>
+        document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+        window.addEventListener('resize', () => {
+            document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+        })
+    </script>
 </body>
 
 </html>
