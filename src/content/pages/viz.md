@@ -1,5 +1,5 @@
 ---
-title: admataz. ideas + code
+title: admataz. ideas + code + visualisation
 author: "Adam Davis"
 date: "2019-10-07"
 description: "admataz"
@@ -15,9 +15,7 @@ indexPages:
 
 ---
 
-# making the web and data and pixels and stuff
+# Interactive data visualisation  
 
-playful, expressive, useful
-
-this is admataz
+The mission is to make beautiful and functional artefacts that enable communication and deeper knowledge and understanding. 
 

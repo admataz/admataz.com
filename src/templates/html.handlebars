@@ -12,14 +12,22 @@
   <meta name="author" content="{{ docs.page.meta.author }}">
   <meta name="viewport" content="width=device-width">
   <meta property="og:title" content="{{ docs.page.meta.title }}" />
-  <meta property="og:url" content="https://admataz.com{{routePath}}/" />
+  <meta property="og:url" content="{{site.itemRoot}}{{routePath}}/" />
   <meta property="og:description" content="{{ docs.page.meta.description }}" />
   <meta property="og:site_name" content="admataz. Web apps and bespoke web development, London UK" />
-  <meta property="og:image" content="https://admataz.com/assets/images/admataz_front.png" />
+  {{#if assets.img.[0]}}
+  <meta property="og:image" content="{{site.homePageUrl}}{{outputPath}}{{assets.img.[0]}}"  />
+  {{else}}
+  <meta property="og:image" content="{{site.itemRoot}}assets/images/admataz_front.png" />
+  {{/if}}
   <link rel="alternate" title="admataz. Web apps and bespoke web development, London UK" type="application/json"
-    href="https://admataz.com/feed.json" />
-  <link rel="alternate" type="application/atom+xml" title="Blog" href="/feed.xml?type=blog" />
+    href="{{site.feedUrl}}" />
+  <link rel="alternate" type="application/atom+xml" title="Blog" href="{{site.itemRoot}}feed.xml?type=blog" />
+  
+  <link href="/assets/favicon.png" rel="icon" type="image/png">
+
   <link rel="stylesheet" href="https://use.typekit.net/btj3ebs.css">
+  
   <link rel="stylesheet" href="/main.css" />
 
   {{#each assets.css}}

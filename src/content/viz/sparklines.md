@@ -15,11 +15,12 @@ assets:
 
 ---
 
-# Sparklines by admataz
   
 > "small graphic designed to give a quick representation of numerical or statistical information within a piece of text, taking the form of a graph without axes."
 
+
+Change the numbers, track the line. 
+
+<div id="app" style="border:2px solid #000; padding: 8px;"></div>
+
 [Source code to this experiment](https://github.com/admataz/sparklines)
-
-
-<div id="app"></div>

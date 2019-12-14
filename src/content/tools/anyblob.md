@@ -8,7 +8,6 @@ published: true
 
 ---
 
-# AnyBlob
 
 AnyBlob is a simple interface to capture and save text, images and links - and have them available as a collection for your own personal use, or to publish as a stream to your website. 
 

@@ -1,0 +1,24 @@
+<div class="body-content site-section">
+  <div class="intro">
+    {{{docs.page.body}}}
+  </div>
+
+  {{#if indexPages.listIndex }}
+  <div class="articles-list">
+    {{#each indexPages.listIndex.pages}}
+    <a class="article" href='{{routePath}}'>
+      <div class="datestamp">{{dateFormat meta.date}}</div>
+      <h3>{{meta.title}}</h3>
+      <p class="blurb">{{meta.description}}</p>
+      {{#if assets.img.[0]}}
+      <img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" />
+      {{/if}}
+
+      <p href='{{routePath}}' class="more-link">more...</p>
+    </a>
+    {{/each}}
+  </div>
+  {{/if}}
+
+
+</div>

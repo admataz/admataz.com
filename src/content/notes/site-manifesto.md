@@ -7,8 +7,6 @@ title: the new, new admataz website manifesto
 published: true
 ---
 
-# the new, new admataz website manifesto
-
 I originally wrote this in 2011 for a previous version of admataz.com to keep my efforts on track. Reviewing it again now in 2015,  admataz has grown into a more formal business entity and I am working more directly with clients as opposed to daily freelance contract work.   I think this is still relevant to my approach to this site. 
 
 

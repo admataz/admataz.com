@@ -1,25 +1,33 @@
+<div class="body-content">
 
-
-    <div class="body-content">
+  <div class="page-main">
+    <h1>{{meta.title}}</h1>
+    <div class="datestamp">{{dateFormat meta.date}}</div>
+    <div class="intro">
+      {{meta.description}}
+    </div>
+    
     {{{docs.page.body}}}
 
+  </div>
 
-    {{#if indexPages.listIndex }}
+
+  {{#if indexPages.listIndex }}
+  <div class="page-aside">
     <div class="articles-list">
       {{#each indexPages.listIndex.pages}}
       <div class="article">
         <div class="datestamp">{{dateFormat meta.date}}</div>
         <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
+        <p class="blurb">{{meta.description}}</p>
         {{#if assets.img.[0]}}
-         <a href='{{routePath}}'><img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" /></a>
+        <a href='{{routePath}}'><img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" /></a>
         {{/if}}
-        
-        <p>{{meta.description}}</p>
+        <a href='{{routePath}}'>more...</a>
       </div>
       {{/each}}
     </div>
-    {{/if}}
-  
-    </div>
+  </div>
+  {{/if}}
 
-
+</div>

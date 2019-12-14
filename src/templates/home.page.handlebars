@@ -1,27 +1,32 @@
 <div class="body-content">
   <div class="intro">
+    <div class="main-nav">
+            {{{docs.main-nav.body}}}
+        </div>
     {{{docs.page.body}}}
+         
   </div>
 
 
 
   {{#if indexPages.listIndex }}
-  
-
   <div class="articles-list">
-<h2>notes and observations</h2>
+    <h2>notes and observations</h2>
     {{#each indexPages.listIndex.pages}}
     <div class="article">
       <div class="datestamp">{{dateFormat meta.date}}</div>
       <h3><a href='{{routePath}}'>{{meta.title}}</a></h3>
+      <p class="blurb">{{meta.description}}</p>
       {{#if assets.img.[0]}}
       <a href='{{routePath}}'><img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" /></a>
       {{/if}}
 
-      <p>{{meta.description}}</p>
+      <a href='{{routePath}}'>more...</a>
     </div>
     {{/each}}
+    <p><a href="/notes/">more notes...</a></p>
   </div>
   {{/if}}
+
 
 </div>

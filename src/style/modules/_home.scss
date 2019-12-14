@@ -1,33 +1,13 @@
 html.page-home {
 
   .body-content{
-    display: flex;
-    background-color: transparent;
     justify-content: stretch;
     margin: 0 auto;
     h1{
       width: 100%;
-    }
-    // p{
-    //   padding: 20px;
-    //   border: 1px solid #000;
-    //   width: 320px;
-    //   height: 200px;
-    //   overflow: hidden;
-    //   background-color:rgba(255,255,255, 0.5);
-    //   margin: 16px;
-    //   box-shadow: 4px 4px 10px #000;
-    // }
-  
-  }
-  .intro{
-    flex: 0 1 50%
+    }  
   }
 
-  .articles-list{ 
-    flex: 1;
-  }
-  
   .logo{
     margin: 190px auto 0;
     padding: 8px;
@@ -40,7 +20,14 @@ html.page-home {
     }
   }
 
+  .intro{
+    img{ 
+      margin: 10%;
+      width: 80%;
+    }
+  }
     @media screen and (min-width: 600px) {   
+
       .main-nav{
         order: 40;
         border: none;
@@ -48,8 +35,23 @@ html.page-home {
       }
       .logo{
         margin: 160px auto 0;
-        opacity: 0.4;
-
+        opacity: 0.6;
+      }
+      .articles-list{ 
+        flex: 1 0 30%;
+      }
+      .intro{
+        flex: 1 0 60%;
+        padding: 0 20px;
+        // line-height: px;
+        img{ 
+          margin: 0;
+          // width: 48px;
+          vertical-align: top;
+        }
+        .icon img{
+          width: 64px;
+        }
       }
     }
 

@@ -8,8 +8,6 @@ published: true
 ---
 
 
-# Drupal as the CMS for a restful API for an iPhone App
-
 For a recent contract the client stipulated Drupal as the CMS to support the web services for their iPhone App. Our advice was to go for a lighter framework that better supports web services and gives better control over things like http headers and the json output.  But sometimes you just have to suck it in and do the best you can with what the client wants...
 
 We made our start with a Drupal 7 minimal install profile and used a number of contributed modules to provide the bulk of the required functionality, with some enhancements via custom coded modules. 

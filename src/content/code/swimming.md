@@ -1,5 +1,5 @@
 ---
-title: Swimming love poem by admataz
+title: Swimming love poem
 author: "Adam Davis"
 date: "2019-12-05"
 description: "some fun with svg"
@@ -13,7 +13,6 @@ assets:
 
 
 ---
-# Swimming love poem by admataz
 
 motion, poetry, flow with animation and SVG. no purpose, just experimentation. And love. 
 

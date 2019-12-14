@@ -5,12 +5,7 @@ description: "A review of a recent adventure"
 keywords: "teamwork, tooling, climbing, management"
 title: "Teamwork in mountain climbing"
 published: true
-assets: 
-    img: 
-        - "./src/assets/images/photo2.jpg"
 ---
-
-# Teamwork in mountain climbing
 
 I recently worked with a talented team that had been tasked to climb the world's highest mountain. Climbing mountains is by definition uphill work - but equipped with frayed and knotted ropes and weighed by luggage this team had an extraordinary task ahead.
 
@@ -32,4 +27,4 @@ The brave few that remained continued slowly and steadily, and the summit was ev
 
 (Well done team. I know you're out there somewhere doing great things…)
 
-![Photo](./img/photo2.jpg)
+

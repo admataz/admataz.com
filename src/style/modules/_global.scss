@@ -7,55 +7,53 @@ html, body {
 }
 
 body {
-    color: #333;
+    color: #666;
     margin: 0;
     padding: 0;
     background: url(../assets/images/stereo-graticule2.svg);
     background-size: cover;
     background-attachment: fixed;
     font-family: freight-sans-pro, sans-serif;
+    font-size: 18px; 
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
+    margin: .5em 0;
+    background-color: rgba(255, 255, 255, 0.7);
 
-
-// font-family: fredericka-the-greatest, serif;
 }
 
 h1 {
+    color: $selected;
+
     font-size: 28px;
-    font-weight: bold;
+    line-height: 28px;
     padding: 0;
-    margin: .5em 0;
-    line-height: 130%;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
 }
 
-p {
+p{
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 0;
-    margin: 0;
+    margin: .5em 0;
 }
 
 h2 {
-    color: $highlight;
-    font-size: 20px;
-    margin: 10px 0 ;
+    color: $selected;
+    font-size: 24px;
+    line-height: 24px;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
 }
 
 h3 {
-    margin: 10px 0 0 0;
+    
+    font-size: 18px;
+    line-height: 18px;
+    margin: 0;
     padding: 0;
 }
 
 code {
-    // font-family: 'TravelingTypewriter', 'American Typewriter', 'Courier New', serif;
     color: #333;
     font-weight: bold;
     padding: 2px;

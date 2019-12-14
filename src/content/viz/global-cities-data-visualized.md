@@ -11,7 +11,6 @@ assets:
 
 ---
 
-# Global city data, visualised
 
 See the [project demo](http://pictographic.io/viz/cities-of-the-world/) and [source code](https://github.com/pictographic/global-city-data) 
  

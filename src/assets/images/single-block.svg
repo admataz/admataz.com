@@ -1,0 +1,7 @@
+<svg>
+    <g transform="matrix( 10.5 0 0 10.5 126 454.14959473379037)" fill="#FFE074" stroke="#bbb" stroke-width="0.05">
+        <polygon points="2,2 0,1 2,0 4,1" fill="#FFE074" classname="cubeTop"></polygon>
+        <polygon points="2,2 2,4 0,3 0,1" fill="#fff" classname="cubeFrontLeft"></polygon>
+        <polygon points="2,2 4,1 4,3 2,4" fill="#efefef" classname="cubeFrontRight"></polygon>
+    </g>
+</svg>

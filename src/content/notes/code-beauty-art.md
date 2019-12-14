@@ -7,8 +7,6 @@ title: code, beauty and art.
 published: true
 ---
 
-# Code, beauty and art
-
 Like all forms of human communication, code for computer programs can contain expressiveness, humour, beauty, ugliness… As a coder you recognise beautiful code as a passage that does something with data using brevity and efficiency, where meaning and capability are neatly tucked into a clear and concise passage. That is poetry. 
 
 Coders are makers. Coding and computational thinking (and probably engineering generally) have become dominated by corporate thinking. Computer scientists and engineers are trained and encouraged to think like a part of the production line, to become framework administrators, and feel comfort in the obfuscation of their craft, keeping computer programmers an exclusive bunch, separate from real society. But there is something more personal, expressive and nuanced in the potential of code. 
@@ -23,7 +21,7 @@ As a form, computer programs live at multiple layers: Firstly the raw code, most
 
 ## Recommended reading
 
-[Laptops and Looms](http://www.paulmiller.org/laptops-and-looms/)  
-[Hackers and Painters](http://www.paulgraham.com/hp.html)  
-[Beautful Code](http://shop.oreilly.com/product/9780596510046.do)  
-[Dreaming in Code](http://www.dreamingincode.com/)  
+- [Laptops and Looms](http://www.paulmiller.org/laptops-and-looms/)  
+- [Hackers and Painters](http://www.paulgraham.com/hp.html)  
+- [Beautful Code](http://shop.oreilly.com/product/9780596510046.do)  
+- [Dreaming in Code](http://www.dreamingincode.com/)  

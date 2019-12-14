@@ -9,7 +9,6 @@ assets:
     img: 
         - "./src/assets/images/articles/TreesOfCamden.jpg"
 ---
-# Trees of Camden Visualised
 
 See the [project demo](http://pictographic.io/viz/trees-of-camden/) and [source code](https://github.com/pictographic/trees-in-camden) 
  

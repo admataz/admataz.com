@@ -5,6 +5,7 @@ const jf = require("jsonfile");
 const blockstatic = require("blockstatic");
 
 const defaultOptions = {
+
   docs: {
     "main-nav": "./src/content/docs/main-nav.md",
     "admataz-logo": "./src/content/docs/admataz-logo.md"
@@ -18,10 +19,10 @@ const defaultOptions = {
   },
   site: {
     title: "admataz - code, tools, games and viz with javascript",
-    homePageUrl: "http://admataz.com",
-    feedUrl: "http://admataz.com/feed.json",
+    homePageUrl: "http://localhost:8080",
+    feedUrl: "http://localhost:8080/feed.json",
     description: "admataz is the web portfolio and professional showcase for Adam Davis",
-    itemRoot: "http://admataz.com/"
+    itemRoot: "http://localhost:8080/"
   }
 };
 
@@ -44,7 +45,7 @@ const feeds = [
   {
     srcDir: "./src/content/viz",
     baseUrl: "/viz",
-    dest: "./dist/viz"
+    dest: "./dist/viz",
   },
   {
     srcDir: "./src/content/case-studies",
@@ -59,7 +60,7 @@ const feeds = [
 ];
 
 async function init(src = [], options = {}) {
-  const sitefeeds = src.map(async ({ srcDir, dest, baseUrl }) => {
+  const sitefeeds = src.map(async ({ srcDir, dest, baseUrl, feedOptions={} }) => {
     const feedsListSrc = await blockstatic.buildContentList(srcDir, baseUrl, 0);
     const contentList = await blockstatic.buildPages(feedsListSrc, dest, {
       ...options,
@@ -81,7 +82,10 @@ async function init(src = [], options = {}) {
   })
 
   const pagesList = await blockstatic.buildContentList('./src/content/pages', '', 0);
-  const sitePages = blockstatic.buildPages(pagesList, "./dist", options)
+  const sitePages = blockstatic.buildPages(pagesList, "./dist", {...options, templates: {
+    html: "./src/templates/html.handlebars",
+    page: "./src/templates/section.page.handlebars"
+  }})
   const allfeeds = await Promise.all(sitefeeds)
   
   const siteRSSContent = allfeeds

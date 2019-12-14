@@ -1,5 +1,5 @@
 ---
-title: admataz. ideas + code
+title: admataz. ideas + notes
 author: "Adam Davis"
 date: "2019-10-07"
 description: "admataz"
@@ -13,9 +13,9 @@ indexPages:
         limit: 20
 ---
 
-# admataz - modules, plugins and apps
+# Notes, thoughts and observations
 
-useful things
+capturing my thoughts and gathering links
 
 
 

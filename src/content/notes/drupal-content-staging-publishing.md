@@ -7,8 +7,6 @@ title: Staging and deploying content in Drupal
 published: true
 ---
 
-# Staging content and managing publication of content to live using Drupal
-
 A website backed by a Content Management System can be great for site owners. The CMS allows the writers editors to do what they do best; once the site is launched they can keep it up to date with great new articles and pages.  Bar the odd support call and feature addition, the web developers can be left to tend to their yachts. Everyone wins. Or so the theory goes. 
 
 One of the most compelling arguments for using Drupal on a project is it's built-in admin interface. Drupal provides the an extendible framework for user management, permissions, site structure set up, and day-to-day content management. With many of the core concerns of interface design and security seen to, Drupal developers can extend functionality and retain consistency within the admin part of the site. 

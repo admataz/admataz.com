@@ -14,7 +14,6 @@ assets:
 
 
 ---
-# Shape shop by admataz
 Some fun with [React](https://facebook.github.io/react/) - that Javascript library people keep talking about.</p>
 
 [Source code to this experiment](https://github.com/admataz/shape-shop)

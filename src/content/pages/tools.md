@@ -15,7 +15,7 @@ indexPages:
 
 ---
 
-# admataz tools for publication - modules, plugins and apps
+# Content management tools
 
-These fun and useful web tools are ready for use,  and are available for download as open source code, packaged modules and site plugins. Let us know if you want a custom or hosted version.
+This collection of projects applies principles of good information architecture and interaction design to managing and publishing  content that is findable and useful. These are designed to be standalone hosted web apps, or as plugins -  compatible with existing websites and popular publishing platforms. 
 

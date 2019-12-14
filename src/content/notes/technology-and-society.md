@@ -7,8 +7,6 @@ title: "Technology and Society"
 published: true
 ---
 
-# Technology and Society
-
 Given I spend most of my day writing software, or I am at least facilitating and thinking about it, I am naturally interested in the effect of technology on society and culture. The ethics and politics of tech reach far and deep. It's global and personal mixed together, from the economy of nations to our privacy and our aggregated behaviours. How much do we control? How much can we affect?
 
 Here are some recent thoughts and reading that have caught my attention: 

@@ -1,0 +1,33 @@
+
+    @media screen and (min-width: 600px) {
+    .site-section{
+        &.body-content{
+            display: block;
+          }
+    
+          .page-main{
+              flex: none;
+            }
+            .articles-list{
+                flex-wrap: wrap;
+               display: flex;
+            .article{
+                flex: 1 0 240px;
+                max-width: 300px;
+                margin: 8px; 
+                box-shadow: none;
+                border: 2px solid #ccc;
+
+                p{
+                    background: transparent;
+                }
+    
+                &:hover{
+                    color: $selected;
+                    border-color: $selected;
+                  }
+            }
+          }
+    }
+
+}

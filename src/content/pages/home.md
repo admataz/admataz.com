@@ -23,7 +23,26 @@ indexPages:
 
 ---
 
-# adventures in code
-Notes, code and experiments from Adam Davis
+<span class="icon"> 
 
-Every blip, bleep and blink is feedback. 
+[![admataz avatar](/assets/images/admataz-avatar.png)](https://twitter.com/admataz) 
+
+I am a web developer living in London. I work as a remote developer for [NearForm](https://nearform.com) where I use [node.js](https://nodejs.org) and [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) to create high-performance software for enterprises. 
+
+I am an organiser for [London Node.js User Group (LNUG)](https://lnug.org)  - we host monthly meetups, talks and workshops. 
+ 
+## **admataz.com is an ongoing project** where I experiment with code and share ideas. 
+
+
+
+<div class="contact-details">
+
+- [adam@admataz.com](mailto:adam@admataz.com)
+- Twitter: [@admataz](https://twitter.com/admataz)
+- GitHub: [@admataz](https://github.com/admataz) 
+
+</div>
+
+[more about admataz...](/about)
+
+</span>

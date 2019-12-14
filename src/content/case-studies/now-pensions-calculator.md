@@ -8,7 +8,6 @@ published: true
 
 ---
 
-## NOW: Pensions calculator
 To help customers understand the benefits of their pension fund, [NOW: Pensions](http://nowpensions.com) commissioned this chart. It provides fields to input user values and  accurately plots the value of the fund over time, compared to other typical funds available. 
 
 Link: [Now: Pensions modeller](http://www.nowpensions.com/modellers/pension-fund-modeller/)

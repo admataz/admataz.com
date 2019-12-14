@@ -16,6 +16,7 @@
     <meta property="og:description" content="{{ docs.page.meta.description }}" />
     <meta property="og:site_name" content="admataz. Web apps and bespoke web development, London UK" />
     <meta property="og:image" content="https://admataz.com/assets/images/admataz_front.png" />
+    <link href="/assets/favicon.png" rel="icon" type="image/png">
     <link rel="alternate" title="admataz. Web apps and bespoke web development, London UK" type="application/json"
         href="https://admataz.com/feed.json" />
     <link rel="alternate" type="application/atom+xml" title="Blog" href="/feed.xml?type=blog" />
@@ -31,16 +32,16 @@
 <body>
     <div id="page-content-container">
         <div id="content-main">
-            <admataz-blocks scale="42" definedylimit="18" gapfrequency="0.8" randomness="10">
+            <admataz-blocks scale="42" definedylimit="16" gapfrequency="0.6" randomness="10">
                 <div class="logo">
                     {{{docs.admataz-logo.body}}}
                 </div>
                 {{{ pageContent }}}
+                
             </admataz-blocks>
+            
         </div>
-        <div class="main-nav">
-            {{{docs.main-nav.body}}}
-        </div>
+   
         <div id="footer-bar">
             © adam davis 2019
         </div>

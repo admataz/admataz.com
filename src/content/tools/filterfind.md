@@ -1,7 +1,7 @@
 ---
 title: Filterfind
 author: "Adam Davis"
-date: "2019-10-07"
+date: "2019-12-07"
 description: "relevant content with a few easy clicks"
 keywords: "code, adam davis, web"
 published: true
@@ -12,7 +12,6 @@ assets:
 
 ---
 
-## Filter:Find
 
 > relevant content with a few easy clicks.
 

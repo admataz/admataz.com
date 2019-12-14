@@ -7,7 +7,6 @@ title: The Elders web site
 published: true
 ---
 
-## The Elders web site
 
 > [The Elders](http://theelders.org) are independent global leaders, brought together by Nelson Mandela, who offer their collective influence and experience to support peace building, help address major causes of human suffering and promote the shared interests of humanity.
 

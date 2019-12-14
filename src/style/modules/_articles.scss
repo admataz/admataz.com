@@ -1,32 +1,53 @@
 .articles-list {
+  
   .article{
-    border-bottom: 1px solid #ccc;
+    box-shadow: 4px 4px 10px #333;
+    padding: 8px;
+    position: relative;
+
+    background-color: #fff;
     margin-bottom:1em;
-    padding-bottom: 1em;
+
+    &:hover{
+      border-color: #222;
+    }
     .datestamp{
       font-size:12px;
       color:#999;
     }
-    h3{
-      margin:0;
-      a{
-      color:#000;
+    a{
+      color:$highlight;
       text-decoration: none;
-      font-family: "museo-slab",serif;
       }
       a:hover{
-        color:$highlight;
+        color:$selected;
       }
+    h3{
+      margin:0 ;
+      
     }
-    p{
-      margin:0;
-      font-size:14px;
+    .blurb{
+      font-size: 16px;
+      margin: 8px 0;
+      padding: 0;
+      font-weight: normal;
     }
+
     img.thumb{
-      max-width: 240px;
-      border: 1px solid #000;
-      box-shadow: 4px 4px 10px #333;
+      width: 100%;
+      background-color: #fff;
+
+    }
+    .more-link{
+      position: absolute;
+      bottom: 0; 
+      right: 0;
+      padding: 4px;
+      display: block;
     }
   }
 
+  @media screen and (min-width: 600px) {
+
+  }
 }

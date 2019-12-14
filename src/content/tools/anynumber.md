@@ -9,7 +9,6 @@ docs:
 
 ---
 
-# AnyNumber
 
 Make it easy to throw together simple charts and visualisations by uploading a CSV file or by pasting some comma-separated numbers.
 

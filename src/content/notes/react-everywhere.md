@@ -7,8 +7,6 @@ title: "React everywhere"
 published: true
 ---
 
-# React.js everywhere
-
 ["React - A JavaScript library for building user interfaces"](https://facebook.github.io/react/)  - it's a pretty good thing. It encourages an approach to developing interfaces that takes much of the mental hoop-jumping out of our day-to-day development tasks. It allows us to be more productive and creative. We get more reliable code than we could with jQuery-event-DOM-AJAX-eventlistener-spaghetti. Win. Win. Win. This is what libraries and frameworks should do for us, and React does it well.
 
 My experiments with React have been rewarding. I enjoy writing apps with React - it suits my way of subdividing problems into smaller modular pieces and recomposing them as a whole. The functional programming paradigm it encourages is well suited to what we do as web developers - and exposure to React and the thinking behind it has been educational and rewarding for most web developers I know. It can open opportunities.

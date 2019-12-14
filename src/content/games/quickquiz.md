@@ -9,6 +9,5 @@ docs:
 
 ---
 
-# quick quiz
 
 

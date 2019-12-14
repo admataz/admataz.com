@@ -7,11 +7,6 @@ title: Article filter faceted navigation in Drupal.
 published: true
 ---
 
-
-
-# Article list tag filter in Drupal
-
-
 A site that publishes articles regularly can, over time, bury older relevant content.
 
 Here I explain the information architecture and server-side technical challenges I faced setting up new organisational structures in a Drupal site to tackle the issue of accessing older content.
