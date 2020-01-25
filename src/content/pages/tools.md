@@ -17,5 +17,5 @@ indexPages:
 
 # Content management tools
 
-This collection of projects applies principles of good information architecture and interaction design to managing and publishing  content that is findable and useful. These are designed to be standalone hosted web apps, or as plugins -  compatible with existing websites and popular publishing platforms. 
+The principles of good information architecture and interaction design applied to managing and publishing content that is findable and useful. These tools are designed to be standalone hosted web apps, or as plugins - compatible with existing websites and popular publishing platforms. 
 

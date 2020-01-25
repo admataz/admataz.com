@@ -1,8 +1,8 @@
 ---
-title: Filterfind
+title: "Filter:Find"
 author: "Adam Davis"
 date: "2019-12-07"
-description: "relevant content with a few easy clicks"
+description: "Filter:Find uses an intuitive pattern to makes relevant content findable with a few easy clicks"
 keywords: "code, adam davis, web"
 published: true
 assets:
@@ -11,10 +11,10 @@ assets:
 
 
 ---
+_Filter:Find_ provides a way to create, manage and publish collections of content items.  The use tags as the organising structure for the content provides the basis for an intuitive navigation that makes this both easy for editors to manage, and simple for users to find content that is useful to them in a few easy clicks. 
 
+![Click. Filter. Find.](./img/filterfind.gif)
 
-> relevant content with a few easy clicks.
+Filterfind is available as a hosted service or as code hosted in your own environment, either node.js or a WordPress plugin.
 
-The Filterfind tools provide a way to create, manage and publish collections of content items that makes it easy to for end-users to find the content that is useful to them.  Content authors can create collections easily using the admin UI tools and an intuitive admin interface.  With tags as the structure for a faceted navigation system - users can easily drill down to the specific combination of topics within your content base that they find interesting.
-
-Filterfind is available as a hosted service or as code hosted in your own environment, either node.js or a WordPress plugin. 
+[See the Filter:Find demo](https://filterfind.demo.admataz.com)

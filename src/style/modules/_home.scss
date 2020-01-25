@@ -20,7 +20,7 @@ html.page-home {
     }
   }
 
-  .intro{
+  .home-intro{
     img{ 
       margin: 10%;
       width: 80%;
@@ -40,7 +40,7 @@ html.page-home {
       .articles-list{ 
         flex: 1 0 30%;
       }
-      .intro{
+      .home-intro{
         flex: 1 0 60%;
         padding: 0 20px;
         // line-height: px;

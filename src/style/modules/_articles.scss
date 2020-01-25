@@ -1,10 +1,18 @@
 .articles-list {
-  
+
+  >a{
+    display: block;
+    color:$highlight;
+    text-decoration: none;
+    &:hover{
+      color:$selected;
+    }
+    }
+    
   .article{
-    box-shadow: 4px 4px 10px #333;
+    box-shadow: 4px 4px 10px rgba(165, 181, 224, 0.8);
     padding: 8px;
     position: relative;
-
     background-color: #fff;
     margin-bottom:1em;
 
@@ -15,22 +23,16 @@
       font-size:12px;
       color:#999;
     }
-    a{
-      color:$highlight;
-      text-decoration: none;
-      }
-      a:hover{
-        color:$selected;
-      }
+    
     h3{
-      margin:0 ;
+      margin:4px 0 ;
       
     }
     .blurb{
       font-size: 16px;
       margin: 8px 0;
-      padding: 0;
-      font-weight: normal;
+      padding: 8px;
+      font-weight: 100;
     }
 
     img.thumb{

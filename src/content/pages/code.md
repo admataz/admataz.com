@@ -18,6 +18,5 @@ indexPages:
 ---
 
 # Adventures in code
-
-With this collection of sketches, spikes and snippets, I try out ideas and I learn more. 
+Sketches, spikes and snippets - sometimes just for the fun of it. 
 

@@ -4,7 +4,7 @@ author: "Adam Davis"
 date: "2019-10-07"
 description: throw in a set of numbers; publish a chart
 keywords: "code, data visualisation, charts"
-published: true
+published: false
 docs:
 
 ---
@@ -19,8 +19,8 @@ AnyNumber will provide a choice of representing your numbers as:
 - Pie chart
 - Sparkline
 
-Use the default colour scheme, or select your own variation. 
+Use the default colour scheme, or select your own variation.
 
-Save your chart as an image to use in a presentation or web page, or make the chart available as embedable code. 
+Save your chart as an image to use in a presentation or web page, or make the chart available as embedable code.
 
-AnyNumber is available as a hosted service, or as open source code you can host yourself. 
+AnyNumber is available as a hosted service, or as open source code you can host yourself.

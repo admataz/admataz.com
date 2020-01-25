@@ -6,7 +6,8 @@
   {{#if indexPages.listIndex }}
   <div class="articles-list">
     {{#each indexPages.listIndex.pages}}
-    <a class="article" href='{{routePath}}'>
+    <a href='{{routePath}}'>
+      <div class="article">
       <div class="datestamp">{{dateFormat meta.date}}</div>
       <h3>{{meta.title}}</h3>
       <p class="blurb">{{meta.description}}</p>
@@ -14,7 +15,8 @@
       <img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" />
       {{/if}}
 
-      <p href='{{routePath}}' class="more-link">more...</p>
+      <p class="more-link">more...</p>
+    </div >
     </a>
     {{/each}}
   </div>
