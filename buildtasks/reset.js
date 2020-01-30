@@ -3,7 +3,7 @@
 var rimraf = require('rimraf');
 
 function init(cb){
-    rimraf('./dist', cb)
+    rimraf('./docs', cb)
 }
 
 module.exports = init;

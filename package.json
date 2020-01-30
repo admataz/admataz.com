@@ -13,23 +13,23 @@
     "watch-sass": "fsmonitor -d './src/style' -s '+*' node ./buildtasks/styles",
     "watch-assets": "fsmonitor -d './src/assets' -s '+*' node ./buildtasks/assets",
     "watch": "npm run watch-content & npm run watch-templates & npm run watch-js & npm run watch-sass & npm run watch-assets",
-    "start": "npm run watch & static dist"
+    "start": "npm run watch & static docs"
   },
   "author": "Adam Davis <adam@admataz.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "^3.1.0"
+    "async": "^3.1.1"
   },
   "devDependencies": {
-    "blockstatic": "^2.0.0",
-    "browserify": "^16.3.0",
-    "eslint": "^6.1.0",
+    "blockstatic": "^2.1.0",
+    "browserify": "^16.5.0",
+    "eslint": "^6.8.0",
     "fs-extra": "^8.1.0",
     "fsmonitor": "^0.2.4",
     "jsonfile": "^5.0.0",
-    "node-sass": "^4.3.0",
+    "node-sass": "^4.13.1",
     "node-static": "^0.7.9",
     "rimraf": "^3.0.0",
-    "uglify-js": "^3.6.0"
+    "uglify-js": "^3.7.6"
   }
 }

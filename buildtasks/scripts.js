@@ -17,7 +17,7 @@ function init(callback) {
             return cb(err);
           }
           fs.outputFile(
-            "./dist/js/components.js",
+            "./docs/js/components.js",
             uglify.minify(buff.toString()).code,
             cb
           );

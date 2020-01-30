@@ -7,7 +7,7 @@ function init(callback) {
   async.series(
     [
       cb => {
-        fs.copy("./src/assets", "./dist/assets", { clobber: true }, cb);
+        fs.copy("./src/assets", "./docs/assets", { clobber: true }, cb);
       }
     ],
     err => {

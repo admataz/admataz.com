@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js page-games">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    admataz. ideas + code
+  </title>
+  <meta name="description" content="admataz">
+  <meta name="keywords" content="code, adam davis, web">
+  <meta name="author" content="Adam Davis">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="admataz. ideas + code" />
+  <meta property="og:url" content="http://localhost:8080//games/" />
+  <meta property="og:description" content="admataz" />
+  <meta property="og:site_name" content="admataz. Web apps and bespoke web development, London UK" />
+  <meta property="og:image" content="http://localhost:8080/assets/images/admataz_front.png" />
+  <link rel="alternate" title="admataz. Web apps and bespoke web development, London UK" type="application/json"
+    href="http://localhost:8080/feed.json" />
+  <link rel="alternate" type="application/atom+xml" title="Blog" href="http://localhost:8080/feed.xml?type=blog" />
+  
+  <link href="/assets/favicon.png" rel="icon" type="image/png">
+
+  <link rel="stylesheet" href="/main.css" />
+
+  <script type="text/javascript" src="/assets/scripts/admataz-blocks.js"></script>
+</head>
+
+<body>
+  <div id="top-bar">
+    <div class="logo">
+      <p><a href="/"><img src="/assets/images/admataz-logo-black.svg" alt="admataz logo"></a></p>
+
+    </div>
+    <div class="main-nav">
+      <ul>
+<li><span class="code"><a href="/code">Code</a></span></li>
+<li><span class="tools"><a href="/tools">Tools</a></span></li>
+<li><span class="viz"><a href="/viz">dataviz</a></span><!-- - <span class="games">[Games](/games)</span> --></li>
+</ul>
+
+    </div>
+  </div>
+
+
+  <div id="page-content-container">
+    <div id="content-main">
+      <admataz-blocks scale="42" definedylimit="12" gapfrequency="0.7" randomness="10">
+        <div class="body-content site-section">
+  <div class="intro">
+    <h1 id="playful">playful</h1>
+
+  </div>
+
+  <div class="articles-list">
+  </div>
+
+
+</div> dd
+      </admataz-blocks>
+    </div>
+
+    <div class="main-nav bottom">
+      <ul>
+<li><span class="code"><a href="/code">Code</a></span></li>
+<li><span class="tools"><a href="/tools">Tools</a></span></li>
+<li><span class="viz"><a href="/viz">dataviz</a></span><!-- - <span class="games">[Games](/games)</span> --></li>
+</ul>
+
+    </div>
+
+    <div id="footer-bar">
+      © adam davis 2019
+    </div>
+  </div>
+
+
+  <script>
+    document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+    window.addEventListener('resize', () => {
+      document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+    })
+  </script>
+</body>
+
+</html>

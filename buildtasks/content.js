@@ -30,32 +30,32 @@ const feeds = [
   {
     srcDir: "./src/content/code",
     baseUrl: "/code",
-    dest: "./dist/code"
+    dest: "./docs/code"
   },
   {
     srcDir: "./src/content/tools",
     baseUrl: "/tools",
-    dest: "./dist/tools"
+    dest: "./docs/tools"
   },
   {
     srcDir: "./src/content/games",
     baseUrl: "/games",
-    dest: "./dist/games"
+    dest: "./docs/games"
   },
   {
     srcDir: "./src/content/viz",
     baseUrl: "/viz",
-    dest: "./dist/viz",
+    dest: "./docs/viz",
   },
   {
     srcDir: "./src/content/case-studies",
     baseUrl: "/case-studies",
-    dest: "./dist/case-studies"
+    dest: "./docs/case-studies"
   },
   {
     srcDir: "./src/content/notes",
     baseUrl: "/notes",
-    dest: "./dist/notes"
+    dest: "./docs/notes"
   }
 ];
 
@@ -82,7 +82,7 @@ async function init(src = [], options = {}) {
   })
 
   const pagesList = await blockstatic.buildContentList('./src/content/pages', '', 0);
-  const sitePages = blockstatic.buildPages(pagesList, "./dist", {...options, templates: {
+  const sitePages = blockstatic.buildPages(pagesList, "./docs", {...options, templates: {
     html: "./src/templates/html.handlebars",
     page: "./src/templates/section.page.handlebars"
   }})
@@ -102,8 +102,8 @@ async function init(src = [], options = {}) {
     siteRSSContent,
     options.site
   );
-  await jf.writeFile(`./dist/feed.json`, jsonFeed);
-  await fs.writeFile(`./dist/feed.xml`, rssFeed, 'utf8');
+  await jf.writeFile(`./docs/feed.json`, jsonFeed);
+  await fs.writeFile(`./docs/feed.xml`, rssFeed, 'utf8');
 
   return Promise.all([
     ...sitefeeds,

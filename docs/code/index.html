@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html class="no-js page-code">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    admataz. adventures in code
+  </title>
+  <meta name="description" content="admataz">
+  <meta name="keywords" content="code, adam davis, web">
+  <meta name="author" content="Adam Davis">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="admataz. adventures in code" />
+  <meta property="og:url" content="http://localhost:8080//code/" />
+  <meta property="og:description" content="admataz" />
+  <meta property="og:site_name" content="admataz. Web apps and bespoke web development, London UK" />
+  <meta property="og:image" content="http://localhost:8080/assets/images/admataz_front.png" />
+  <link rel="alternate" title="admataz. Web apps and bespoke web development, London UK" type="application/json"
+    href="http://localhost:8080/feed.json" />
+  <link rel="alternate" type="application/atom+xml" title="Blog" href="http://localhost:8080/feed.xml?type=blog" />
+  
+  <link href="/assets/favicon.png" rel="icon" type="image/png">
+
+  <link rel="stylesheet" href="/main.css" />
+
+  <script type="text/javascript" src="/assets/scripts/admataz-blocks.js"></script>
+</head>
+
+<body>
+  <div id="top-bar">
+    <div class="logo">
+      <p><a href="/"><img src="/assets/images/admataz-logo-black.svg" alt="admataz logo"></a></p>
+
+    </div>
+    <div class="main-nav">
+      <ul>
+<li><span class="code"><a href="/code">Code</a></span></li>
+<li><span class="tools"><a href="/tools">Tools</a></span></li>
+<li><span class="viz"><a href="/viz">dataviz</a></span><!-- - <span class="games">[Games](/games)</span> --></li>
+</ul>
+
+    </div>
+  </div>
+
+
+  <div id="page-content-container">
+    <div id="content-main">
+      <admataz-blocks scale="42" definedylimit="12" gapfrequency="0.7" randomness="10">
+        <div class="body-content site-section">
+  <div class="intro">
+    <h1 id="adventures-in-code">Adventures in code</h1>
+<p>Sketches, spikes and snippets - sometimes just for the fun of it. </p>
+
+  </div>
+
+  <div class="articles-list">
+    <a href='/code/swimming'>
+      <div class="article">
+      <div class="datestamp">5 December 2019</div>
+      <h3>Swimming love poem</h3>
+      <p class="blurb">some fun with svg</p>
+      <img src="/code/swimming/img/swimming.png" class="thumb" />
+
+      <p class="more-link">more...</p>
+    </div >
+    </a>
+    <a href='/code/shape-shop'>
+      <div class="article">
+      <div class="datestamp">7 October 2019</div>
+      <h3>Shape shop</h3>
+      <p class="blurb">some fun with react</p>
+      <img src="/code/shape-shop/img/shapeshop.png" class="thumb" />
+
+      <p class="more-link">more...</p>
+    </div >
+    </a>
+    <a href='/code/sparklines'>
+      <div class="article">
+      <div class="datestamp">7 October 2019</div>
+      <h3>Sparklines</h3>
+      <p class="blurb"></p>
+      <img src="/code/sparklines/img/sparklines.png" class="thumb" />
+
+      <p class="more-link">more...</p>
+    </div >
+    </a>
+  </div>
+
+
+</div> dd
+      </admataz-blocks>
+    </div>
+
+    <div class="main-nav bottom">
+      <ul>
+<li><span class="code"><a href="/code">Code</a></span></li>
+<li><span class="tools"><a href="/tools">Tools</a></span></li>
+<li><span class="viz"><a href="/viz">dataviz</a></span><!-- - <span class="games">[Games](/games)</span> --></li>
+</ul>
+
+    </div>
+
+    <div id="footer-bar">
+      © adam davis 2019
+    </div>
+  </div>
+
+
+  <script>
+    document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+    window.addEventListener('resize', () => {
+      document.querySelector('admataz-blocks').setAttribute("containerwidth", document.body.clientWidth)
+    })
+  </script>
+</body>
+
+</html>
