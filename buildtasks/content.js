@@ -4,27 +4,27 @@ const fs = require("fs").promises;
 const jf = require("jsonfile");
 const blockstatic = require("blockstatic");
 
-const defaultOptions = {
+    const defaultOptions = {
 
-  docs: {
-    "main-nav": "./src/content/docs/main-nav.md",
-    "admataz-logo": "./src/content/docs/admataz-logo.md"
-  },
-  // data: {
-  //   common: "./src/content/data/global-content.json"
-  // },
-  templates: {
-    html: "./src/templates/html.handlebars",
-    page: "./src/templates/page.handlebars"
-  },
-  site: {
-    title: "admataz - code, tools, games and viz with javascript",
-    homePageUrl: "http://localhost:8080",
-    feedUrl: "http://localhost:8080/feed.json",
-    description: "admataz is the web portfolio and professional showcase for Adam Davis",
-    itemRoot: "http://localhost:8080/"
-  }
-};
+      docs: {
+        "main-nav": "./src/content/docs/main-nav.md",
+        "admataz-logo": "./src/content/docs/admataz-logo.md"
+      },
+      // data: {
+      //   common: "./src/content/data/global-content.json"
+      // },
+      templates: {
+        html: "./src/templates/html.handlebars",
+        page: "./src/templates/page.handlebars"
+      },
+      site: {
+        title: "admataz - code, tools, games and viz with javascript",
+        homePageUrl: "https://admataz.com",
+        feedUrl: "https://admataz.com/feed.json",
+        description: "admataz is the web portfolio and professional showcase for Adam Davis",
+        itemRoot: "https://admataz.com/"
+      }
+    };
 
 const feeds = [
   {

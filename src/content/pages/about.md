@@ -62,9 +62,9 @@ So this:
 
 ## Typefaces
 
-The fun typeface for the main navigation is [Nove](https://www.fsd.it/shop/fonts/nove/) by [Fabrizio Schiavi](https://www.fsd.it). For regular copy it's [Freight Sans](https://fonts.adobe.com/fonts/freight-sans) by [Joshua Darden](https://fonts.adobe.com/designers/joshua-darden) . 
+The fun typeface for the main navigation is [Luckiest Guy](https://fonts.google.com/specimen/Luckiest+Guy) by _Astigmatic_. For regular copy it's [Chivo](https://www.omnibus-type.com/fonts/chivo/) by [Omnibus-type](https://www.omnibus-type.com/) . 
 
-Fonts are hosted and loaded from [Adobe Typekit](https://fonts.adobe.com).
+I chose open source fonts because I wanted to host them myself and not rely on a 3rd party to serve this part of my design. 
 
 I continue to tweak the graphics and typography of this site because it's never quite right.  
 
