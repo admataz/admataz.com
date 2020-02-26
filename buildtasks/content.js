@@ -8,7 +8,8 @@ const blockstatic = require("blockstatic");
 
       docs: {
         "main-nav": "./src/content/docs/main-nav.md",
-        "admataz-logo": "./src/content/docs/admataz-logo.md"
+        "admataz-logo": "./src/content/docs/admataz-logo.md",
+        "admataz-avatar": "./src/content/docs/admataz-avatar.md"
       },
       // data: {
       //   common: "./src/content/data/global-content.json"

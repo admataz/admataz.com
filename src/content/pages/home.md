@@ -19,11 +19,13 @@ indexPages:
         inputPath: "./src/content/notes"
         template: "./src/templates/pageIndexes/pageIndexList.handlebars"
         outputPath: "/notes"
-        limit: 4
+        limit: 10
 
 ---
 
 <span class="icon">
+
+### about admataz
 
 [![admataz avatar](/assets/images/admataz-avatar.png)](https://twitter.com/admataz)
 

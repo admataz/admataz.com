@@ -1,35 +1,48 @@
 <div class="body-content">
-  <div class="home-intro">
-    <div class="main-nav">
-            {{{docs.main-nav.body}}}
-        </div>
-    {{{docs.page.body}}}
-         
-  </div>
 
 
 
   {{#if indexPages.listIndex }}
   <div class="articles-list">
-    <h2>notes and observations</h2>
-    <div class="articles-list">
+    <div class="avatar">
+      {{{docs.admataz-avatar.body}}}
+    </div>
     {{#each indexPages.listIndex.pages}}
-    <a href='{{routePath}}'>
+
     <div class="article">
-      <div class="datestamp">{{dateFormat meta.date}}</div>
-      <h3>{{meta.title}}</h3>
-      <p class="blurb">{{meta.description}}</p>
-      {{#if assets.img.[0]}}
-      <img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" />
-      {{/if}}
-     <p>more...</p>
+      <a href='{{routePath}}'>
+      <div class="header">
+        <h3>{{meta.title}}</h3>
+        <div class="datestamp">{{dateFormat meta.date}}</div>
+      </div>
+
+      <div class="main">
+        <p class="blurb">{{meta.description}}</p>
+        {{#if assets.img.[0]}}
+        <img src="{{outputPath}}{{assets.img.[0]}}" class="thumb" />
+        {{/if}}
+
+      </div>
+      </a>
+      <div class="footer">
+        <div class="keywords">{{meta.keywords}}</div>
+      </div>
     </div>
-    </a>
+
+
     {{/each}}
-    </div>
-    <p><a href="/notes/">more notes...</a></p>
+      <div class="more-link"><a href="/notes/">more notes and observations...</a></div>
+
+      <div class="page-body home-intro">
+      {{{docs.page.body}}}
+      </div>
+      
   </div>
+
   {{/if}}
+
+
+
 
 
 </div>
