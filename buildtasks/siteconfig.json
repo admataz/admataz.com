@@ -1,7 +1,7 @@
 {
     "docs": {
-        "main-nav": "./src/content/docs/main-nav.md",
-        "admataz-logo": "./src/content/docs/admataz-logo.md"
+        "main-nav": "./src/content/dist/main-nav.md",
+        "admataz-logo": "./src/content/dist/admataz-logo.md"
     },
     "templates": {
         "html": "./src/templates/html.handlebars",

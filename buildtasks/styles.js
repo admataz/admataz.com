@@ -18,7 +18,7 @@ function init(callback) {
             if (err) {
               return cb(err);
             }
-            fs.writeFile("./docs/main.css", result.css, cb);
+            fs.writeFile("./dist/main.css", result.css, cb);
           }
         );
       }

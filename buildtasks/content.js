@@ -7,9 +7,9 @@ const blockstatic = require("blockstatic");
     const defaultOptions = {
 
       docs: {
-        "main-nav": "./src/content/docs/main-nav.md",
-        "admataz-logo": "./src/content/docs/admataz-logo.md",
-        "admataz-avatar": "./src/content/docs/admataz-avatar.md"
+        "main-nav": "./src/content/dist/main-nav.md",
+        "admataz-logo": "./src/content/dist/admataz-logo.md",
+        "admataz-avatar": "./src/content/dist/admataz-avatar.md"
       },
       // data: {
       //   common: "./src/content/data/global-content.json"
@@ -28,35 +28,35 @@ const blockstatic = require("blockstatic");
     };
 
 const feeds = [
-  {
-    srcDir: "./src/content/code",
-    baseUrl: "/code",
-    dest: "./docs/code"
-  },
-  {
-    srcDir: "./src/content/tools",
-    baseUrl: "/tools",
-    dest: "./docs/tools"
-  },
-  {
-    srcDir: "./src/content/games",
-    baseUrl: "/games",
-    dest: "./docs/games"
-  },
-  {
-    srcDir: "./src/content/viz",
-    baseUrl: "/viz",
-    dest: "./docs/viz",
-  },
-  {
-    srcDir: "./src/content/case-studies",
-    baseUrl: "/case-studies",
-    dest: "./docs/case-studies"
-  },
+  // {
+  //   srcDir: "./src/content/code",
+  //   baseUrl: "/code",
+  //   dest: "./docs/code"
+  // },
+  // {
+  //   srcDir: "./src/content/tools",
+  //   baseUrl: "/tools",
+  //   dest: "./docs/tools"
+  // },
+  // {
+  //   srcDir: "./src/content/games",
+  //   baseUrl: "/games",
+  //   dest: "./docs/games"
+  // },
+  // {
+  //   srcDir: "./src/content/viz",
+  //   baseUrl: "/viz",
+  //   dest: "./docs/viz",
+  // },
+  // {
+  //   srcDir: "./src/content/case-studies",
+  //   baseUrl: "/case-studies",
+  //   dest: "./docs/case-studies"
+  // },
   {
     srcDir: "./src/content/notes",
     baseUrl: "/notes",
-    dest: "./docs/notes"
+    dest: "./dist/notes"
   }
 ];
 
@@ -103,8 +103,8 @@ async function init(src = [], options = {}) {
     siteRSSContent,
     options.site
   );
-  await jf.writeFile(`./docs/feed.json`, jsonFeed);
-  await fs.writeFile(`./docs/feed.xml`, rssFeed, 'utf8');
+  await jf.writeFile(`./dist/feed.json`, jsonFeed);
+  await fs.writeFile(`./dist/feed.xml`, rssFeed, 'utf8');
 
   return Promise.all([
     ...sitefeeds,
