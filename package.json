@@ -27,7 +27,7 @@
     "fs-extra": "^8.1.0",
     "fsmonitor": "^0.2.4",
     "jsonfile": "^5.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "node-static": "^0.7.9",
     "rimraf": "^3.0.0",
     "uglify-js": "^3.7.6"
