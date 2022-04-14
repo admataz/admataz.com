@@ -18,7 +18,7 @@
   "author": "Adam Davis <adam@admataz.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "^3.1.1"
+    "async": "^3.2.2"
   },
   "devDependencies": {
     "blockstatic": "^2.1.0",
