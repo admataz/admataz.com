@@ -7,8 +7,8 @@ keywords: "code, adam davis, web"
 published: true
 indexPages: 
     listIndex:
-        inputPath: "./src/content/case-studies"
-        template: "./src/templates/pageIndexes/pageIndexList.handlebars"
+        inputPath: "src/content/case-studies"
+        template: "src/templates/pageIndexes/pageIndexList.handlebars"
         outputPath: "/case-studies"
         limit: 0
 ---
