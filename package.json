@@ -5,14 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-content": "fsmonitor -d './src/content' -s '+*' node ./buildtasks/content",
     "reset": "node ./buildtasks/reset && npm run build",
     "build": "node ./buildtasks/content && node ./buildtasks/scripts && node ./buildtasks/styles && node ./buildtasks/assets",
-    "watch-templates": "fsmonitor -d './src/templates' -s '+*' node ./buildtasks/content",
-    "watch-js": "fsmonitor -d './src/components' -s '+*' node ./buildtasks/scripts",
-    "watch-sass": "fsmonitor -d './src/style' -s '+*' node ./buildtasks/styles",
-    "watch-assets": "fsmonitor -d './src/assets' -s '+*' node ./buildtasks/assets",
-    "watch": "npm run watch-content & npm run watch-templates & npm run watch-js & npm run watch-sass & npm run watch-assets",
     "start": "npm run watch & static docs"
   },
   "author": "Adam Davis <adam@admataz.com>",
@@ -21,14 +15,11 @@
     "async": "^3.2.0"
   },
   "devDependencies": {
-    "blockstatic": "^2.2.1",
+    "blockstatic": "^2.2.2",
     "browserify": "^17.0.1",
     "eslint": "^9.27.0",
     "fs-extra": "^11.3.0",
-    "fsmonitor": "^0.2.4",
     "jsonfile": "^6.1.0",
-    "node-sass": "^4.14.1",
-    "node-static": "^0.7.9",
     "rimraf": "^6.0.1",
     "sass": "^1.89.0",
     "uglify-js": "^3.13.0"
