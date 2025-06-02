@@ -2,7 +2,7 @@
 
 var fs = require("fs-extra");
 var async = require("async");
-var sass = require("node-sass");
+var sass = require("sass");
 
 function init(callback) {
   async.series(
@@ -42,5 +42,6 @@ if (!module.parent) {
       return console.log(err);
     }
     console.log("Compiled Styles!");
+    return;
   });
 }

@@ -41,5 +41,6 @@ if (!module.parent) {
       return console.log(err);
     }
     console.log("Compiled Scripts!");
+    return;
   });
 }

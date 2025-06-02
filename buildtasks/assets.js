@@ -28,5 +28,6 @@ if (!module.parent) {
     }
 
     console.log("Compiled Assets!");
+    return;
   });
 }

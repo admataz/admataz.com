@@ -1,3 +1,4 @@
+@use "../vars";
 
 
 .main-nav {
@@ -30,7 +31,7 @@
         padding-top: 4px; 
       }
       a:hover{
-          color: $selected;
+          color: vars.$selected;
       }
       list-style: none;
       flex: 1;
@@ -40,7 +41,7 @@
 }
 
 %selected {
-  color: $selected;
+  color: vars.$selected;
   box-shadow: none;
   border-color: #999;
   border: none;

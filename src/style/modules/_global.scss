@@ -1,3 +1,5 @@
+@use "../vars";
+
 * {
     box-sizing: border-box;
 }
@@ -26,7 +28,7 @@ h2 {
 }
 
 h1 {
-    color: $selected;
+    color: vars.$selected;
 
     font-size: 28px;
     line-height: 28px;
@@ -68,7 +70,7 @@ a {
 }
 
 a:hover {
-    color: $selected;
+    color: vars.$selected;
 }
 
 // .cf:before,

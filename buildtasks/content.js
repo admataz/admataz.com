@@ -3,20 +3,21 @@
 const fs = require("fs").promises;
 const jf = require("jsonfile");
 const blockstatic = require("blockstatic");
+const path = require("path")
 
     const defaultOptions = {
 
       docs: {
-        "main-nav": "./src/content/dist/main-nav.md",
-        "admataz-logo": "./src/content/dist/admataz-logo.md",
-        "admataz-avatar": "./src/content/dist/admataz-avatar.md"
+        "main-nav":  path.resolve(__dirname,"../src/content/docs/main-nav.md"),
+        "admataz-logo":  path.resolve(__dirname,"../src/content/docs/admataz-logo.md"),
+        "admataz-avatar":  path.resolve(__dirname,"../src/content/docs/admataz-avatar.md")
       },
       // data: {
-      //   common: "./src/content/data/global-content.json"
+      //   common: path.resolve(__dirname,"../src/content/data/global-content.json")
       // },
       templates: {
-        html: "./src/templates/html.handlebars",
-        page: "./src/templates/page.handlebars"
+        html:  path.resolve(__dirname,"../src/templates/html.handlebars"),
+        page:  path.resolve(__dirname,"../src/templates/page.handlebars")
       },
       site: {
         title: "admataz - code, tools, games and viz with javascript",
@@ -54,9 +55,9 @@ const feeds = [
   //   dest: "./docs/case-studies"
   // },
   {
-    srcDir: "./src/content/notes",
+    srcDir: path.resolve(__dirname,"../src/content/notes"),
     baseUrl: "/notes",
-    dest: "./dist/notes"
+    dest: path.resolve(__dirname,"../dist/notes")
   }
 ];
 
@@ -82,10 +83,10 @@ async function init(src = [], options = {}) {
     return compiledContent
   })
 
-  const pagesList = await blockstatic.buildContentList('./src/content/pages', '', 0);
-  const sitePages = blockstatic.buildPages(pagesList, "./docs", {...options, templates: {
-    html: "./src/templates/html.handlebars",
-    page: "./src/templates/section.page.handlebars"
+  const pagesList = await blockstatic.buildContentList(path.resolve(__dirname,'../src/content/pages'), '', 0);
+  const sitePages = await blockstatic.buildPages(pagesList, path.resolve(__dirname,"../dist"), {...options, templates: {
+    html: path.resolve(__dirname,"../src/templates/html.handlebars"),
+    page: path.resolve(__dirname,"../src/templates/section.page.handlebars")
   }})
   const allfeeds = await Promise.all(sitefeeds)
   
@@ -103,8 +104,8 @@ async function init(src = [], options = {}) {
     siteRSSContent,
     options.site
   );
-  await jf.writeFile(`./dist/feed.json`, jsonFeed);
-  await fs.writeFile(`./dist/feed.xml`, rssFeed, 'utf8');
+  await jf.writeFile(path.resolve(__dirname,"../dist/feed.json"), jsonFeed);
+  await fs.writeFile(path.resolve(__dirname,"../dist/feed.xml"), rssFeed, 'utf8');
 
   return Promise.all([
     ...sitefeeds,
@@ -114,7 +115,7 @@ async function init(src = [], options = {}) {
 
 module.exports = init;
 if (!module.parent) {
-  init(feeds, defaultOptions)
+  return init(feeds, defaultOptions)
     .then(() => "compiled!")
     .catch(err => console.log(err));
 }

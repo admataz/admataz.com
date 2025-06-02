@@ -1,3 +1,5 @@
+@use "../vars";
+
 
     @media screen and (min-width: 600px) {
     .site-section{
@@ -23,8 +25,8 @@
                 }
     
                 &:hover{
-                    color: $selected;
-                    border-color: $selected;
+                    color: vars.$selected;
+                    border-color: vars.$selected;
                   }
             }
           }

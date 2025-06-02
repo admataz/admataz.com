@@ -1,15 +1,14 @@
 // $highlight: rgb(77, 68, 197);
-$selected: #c30;
-$highlight: #000;
 
-@import "modules/fonts";
-@import "modules/global";
-@import "modules/content_layout";
-@import "modules/main-nav";
-@import "modules/home";
-@import "modules/articles";
 
-@import "modules/site-section";
+@use "modules/fonts";
+@use "modules/global";
+@use "modules/content_layout";
+@use "modules/main-nav";
+@use "modules/home";
+@use "modules/articles";
+
+@use "modules/site-section";
 
 
 

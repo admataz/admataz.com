@@ -1,6 +1,8 @@
 node_modules/*
 dist/*
 npm-debug.log
+docs/*
+.obsidian/*
 
 
 **/src/content/**/_drafts/*

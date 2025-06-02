@@ -1,3 +1,5 @@
+@use "../vars";
+
 .articles-list {
 
     .avatar{
@@ -19,11 +21,11 @@
     justify-items: stretch;
     margin-bottom: 20px;
     >a {
-      color: $highlight;
+      color: vars.$highlight;
       text-decoration: none;
       flex: 1 1 auto;
       &:hover {
-        color: $selected;
+        color: vars.$selected;
       }
     }
 
