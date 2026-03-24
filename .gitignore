@@ -3,6 +3,11 @@ dist/*
 npm-debug.log
 docs/*
 .obsidian/*
-
+.DS_Store
+.vscode/*
+.idea/*
+*.log
+*.tmp
+*.bak
 
 **/src/content/**/_drafts/*
